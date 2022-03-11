@@ -1,0 +1,345 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/***********************************************/
+/*******************TIPOGRAFIA******************/
+/***********************************************/
+@font-face {
+  font-family: ´rubik-regular´;
+  src: url(../tipografias/static/Rubik-Regular.ttf); }
+
+@font-face {
+  font-family: ´rubik-bold´;
+  src: url(../tipografias/static/Rubik-Bold.ttf); }
+
+@font-face {
+  font-family: ´rubik-semibold´;
+  src: url(../tipografias/static/Rubik-SemiBold.ttf); }
+
+@font-face {
+  font-family: ´rubik-light´;
+  src: url(../tipografias/static/Rubik-Light.ttf); }
+
+@font-face {
+  font-family: ´rubik-medium´;
+  src: url(../tipografias/static/Rubik-Medium.ttf); }
+
+/*margen a todo el cuerpo menos el barra de navegacion*/
+/***********************************************/
+/**********************HEADER*******************/
+/***********************************************/
+/*poner en 0 padding de valores puestos por bootstrap*/
+#header {
+  padding-right: 0%;
+  padding-left: 0%; }
+
+.BtnContactoNav {
+  background-color: #fd7e14;
+  border-color: #fd7e14; }
+  .BtnContactoNav .textoBtnContactoNav {
+    font-family: ´rubik-medium´;
+    text-decoration: none;
+    color: white; }
+
+.BtnContactoNav:hover {
+  background-color: #FFA048;
+  border-color: #FFA048; }
+
+#linkSpaces {
+  font-family: ´rubik-regular´;
+  color: black;
+  font-size: 90%;
+  padding-right: 2%;
+  padding-left: 2%; }
+
+#linkSpaces:hover {
+  color: #fd7e14; }
+
+/***********************************************/
+/**********************TITULOS*******************/
+/***********************************************/
+h4, h5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center; }
+
+/***********************************************/
+/****************ASIDE WATSAPP******************/
+/***********************************************/
+.btnWatsapp img {
+  background-color: #25d366;
+  border-radius: 60px;
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  text-align: center; }
+
+.btnWatsapp img:hover {
+  background-color: #70dd98; }
+
+/***********************************************/
+/******************PORTADA**********************/
+/***********************************************/
+.portadaIndex {
+  background-image: url(../img/portada/fotoPortada.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 690px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 6%; }
+  .portadaIndex h1 {
+    font-family: ´rubik-medium´;
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    color: #FDFDFD;
+    padding-left: 18.5%;
+    letter-spacing: 1px; }
+  .portadaIndex p {
+    font-family: ´rubik-regular´;
+    letter-spacing: 1px;
+    color: #E6E6E6;
+    padding-left: 18.5%; }
+  .portadaIndex div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 18.5%; }
+  .portadaIndex a {
+    margin-top: 1%; }
+  .portadaIndex #botonSecundario {
+    background-color: #fd7e14;
+    border-color: #fd7e14;
+    color: white; }
+  .portadaIndex #botonSecundario:hover {
+    background-color: transparent;
+    color: #fd7e14; }
+
+#queHacemos h4 {
+  text-align: center; }
+
+#queHacemos p {
+  text-align: justify;
+  font-size: 1.1rem; }
+
+#funcionalidades h4 {
+  text-align: center; }
+
+.ventajas {
+  margin: 2rem 0 !important;
+  background-color: #ff7505;
+  border-radius: 5px;
+  box-shadow: 0px 4px #cfcccc; }
+  .ventajas img {
+    width: 400px;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.219); }
+  .ventajas .img-2 {
+    margin-left: 3rem; }
+  .ventajas .row {
+    margin: 2rem 0 !important; }
+    .ventajas .row .textoVentajas {
+      margin: 1rem 0 0 3rem;
+      font-size: 1.3rem;
+      color: white;
+      text-align: justify; }
+      .ventajas .row .textoVentajas h5 {
+        font-weight: bolder; }
+
+.utilidades {
+  background-color: gray;
+  text-align: center;
+  height: 300px;
+  border-radius: 5px; }
+
+#quienesSomos {
+  margin-top: 1rem; }
+  #quienesSomos h4 {
+    text-align: center;
+    margin-bottom: 1rem; }
+  #quienesSomos p {
+    text-align: justify;
+    font-size: 1.1rem; }
+
+/*Clientes*/
+.color {
+  background-color: whitesmoke;
+  padding-top: 5%; }
+
+.colorClientes {
+  background-color: white; }
+
+#noPad {
+  padding-bottom: 0%;
+  margin-bottom: 0; }
+
+.testimonios {
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 8.5%;
+  padding-left: 8.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .testimonios div {
+    width: 20%; }
+    .testimonios div p {
+      text-align: left;
+      padding-top: 12%; }
+    .testimonios div .bordesImgClients {
+      border-radius: 5%;
+      width: 500%;
+      border: 2px solid #fd7e14;
+      box-shadow: 0px 5px 5px 2px grey; }
+
+/*Marcas*/
+.marcas {
+  border-radius: 5%;
+  border: 2px solid #fd7e14;
+  box-shadow: 0px 5px 5px 2px grey;
+  padding-right: 0%;
+  padding-left: 0%; }
+
+/*Formulario de contacto*/
+.contactanos {
+  background-color: #fd7d146b;
+  padding-bottom: 4%; }
+  .contactanos input, .contactanos textarea {
+    border-color: #fd7e14;
+    border-width: 2px;
+    box-shadow: 0px 5px 5px 2px #fd7e14; }
+  .contactanos textarea {
+    height: 200px; }
+  .contactanos button {
+    margin-top: 2%;
+    color: white;
+    font-weight: bold; }
+
+.form {
+  text-align: center;
+  margin-top: 1rem; }
+  .form input, .form textarea {
+    width: 50%;
+    margin: 0.7rem auto; }
+
+.btnEnviar {
+  background-color: #fd7e14;
+  box-shadow: 0px 2px 2px gray; }
+
+.btnEnviar:hover {
+  box-shadow: 0px 3px 3px gray;
+  color: white; }
+
+/*Footer*/
+footer {
+  background-color: #3A3A3A;
+  padding-top: 1%;
+  padding-bottom: 2%; }
+  footer .grid1 .contenedorLogo {
+    margin-bottom: 5%; }
+  footer .grid1 h6 {
+    padding-top: 5%;
+    color: white;
+    font-family: ´rubik-medium´; }
+
+#noMarg {
+  padding-left: 0%; }
+
+#navFooter {
+  padding-left: 0%; }
+
+.grid2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .grid2 .footerNav {
+    text-decoration: none;
+    font-family: ´rubik-regular´;
+    color: white; }
+    .grid2 .footerNav li {
+      padding-top: 1%;
+      list-style: none;
+      padding-bottom: 2%; }
+    .grid2 .footerNav li:hover {
+      color: #a0a0a0; }
+
+.grid3 p {
+  color: white;
+  font-family: ´rubik-regular´;
+  font-weight: bold; }
+
+.grid3 li {
+  font-family: ´rubik-regular´;
+  color: white;
+  list-style: none;
+  padding-top: 1%; }
+
+.grid3 img {
+  width: 10%;
+  margin-right: 3%;
+  margin-top: 1%;
+  border-radius: 15%;
+  box-shadow: 0px 3px 3px #1b1b1b; }
+
+.grid3 img:hover {
+  transform: scale(110%);
+  transition: 0.5s;
+  box-shadow: 0px 3px 3px #1b1b1b; }
+
+.licencia {
+  color: white;
+  font-family: ´rubik-regular´; }
+
+/*Mediaqueries*/
+@media only screen and (max-width: 992px) {
+  /*header*/
+  .botonMediaScreen {
+    display: none; }
+  .margenParrafoVideo {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 1%;
+    padding-left: 1%; }
+  .grid1 {
+    display: flex;
+    align-items: center; } }
+
+@media only screen and (max-width: 768px) {
+  .testimonios div {
+    width: 100%;
+    padding-top: 2%; }
+    .testimonios div .cuadro {
+      display: flex;
+      justify-content: center; }
+    .testimonios div .bordesImgClients {
+      width: 70%; }
+    .testimonios div p {
+      padding-top: 5%;
+      padding-right: 5%;
+      padding-left: 5%; }
+  .marcas {
+    margin-bottom: 5%; }
+  .form input, .form textarea {
+    width: 85%; } }
+
+@media only screen and (max-width: 576px) {
+  .logoMediaScreen {
+    margin-bottom: 5%; } }
