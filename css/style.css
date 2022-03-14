@@ -127,8 +127,11 @@ h4, h5 {
     border-color: #fd7e14;
     color: white; }
   .portadaIndex #botonSecundario:hover {
-    background-color: transparent;
-    color: #fd7e14; }
+    background-color: #FFA048;
+    border-color: #FFA048; }
+
+.colorH1 {
+  color: #fd7e14; }
 
 #queHacemos h4 {
   text-align: center; }

@@ -147,11 +147,13 @@ h4,h5{
         color: white; }
       
       #botonSecundario:hover {
-        background-color: transparent;
-        color: #fd7e14; 
+        background-color: #FFA048;
+        border-color: #FFA048;
     }
 }
-
+.colorH1{
+    color: #fd7e14;
+}
   
 #queHacemos {
     h4{
@@ -263,7 +265,6 @@ h4,h5{
     box-shadow: 0px 5px 5px 2px grey;
     padding-right: 0%;
     padding-left: 0%;
-
 }
 
 /*Formulario de contacto*/
