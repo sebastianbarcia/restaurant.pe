@@ -4,14 +4,15 @@ const rubro =
   {tipo: "foodtruck"},
   {tipo: "bar"}];
 
-$(".colorH1").text(` ${"pasteleria"}`);  
+$(".colorH1").text(` ${"pastelería"}`);  
 
-const tipoNegocio = rubro.sort()
-console.log(tipoNegocio)
-let intervalID = window.setInterval(miFuncion, 1350, 'pasteleria');
-let intervalID1 = window.setInterval(miFuncionb, 1700, 'Restaurant');
-let intervalID2 = window.setInterval(miFuncionc, 2600, 'Bar');
-let intervalID3 = window.setInterval(miFunciond, 3600, 'Food truck');
+function intervalSet(){
+window.setTimeout(miFuncion, 1500);
+window.setTimeout(miFuncionb, 3000);
+window.setTimeout(miFuncionc, 4500);
+window.setTimeout(miFunciond, 6000);
+}
+let intervalFinal = setInterval(intervalSet,7500)
 
 function miFuncion(a) { 
   $(".colorH1").text(`
