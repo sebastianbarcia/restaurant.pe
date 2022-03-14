@@ -1,18 +1,18 @@
 const rubro = 
   [{tipo: "pastelería"},
-  {tipo: "restaurante"},
+  {tipo: "bar"},
   {tipo: "foodtruck"},
-  {tipo: "bar"}];
+  {tipo: "restaurante"}];
 
-$(".colorH1").text(` ${"pastelería"}`);  
+$(".colorH1").text(`${"restaurante"}`);  
 
 function intervalSet(){
-window.setTimeout(miFuncion, 1500);
-window.setTimeout(miFuncionb, 3000);
-window.setTimeout(miFuncionc, 4500);
-window.setTimeout(miFunciond, 6000);
+window.setTimeout(miFuncion, 1500, 'pasteleria');
+window.setTimeout(miFuncionb, 3000, 'Restaurant');
+window.setTimeout(miFuncionc, 4500, 'Bar');
+window.setTimeout(miFunciond, 6000, 'Food truck');
 }
-let intervalFinal = setInterval(intervalSet,7500)
+let intervalFinal = setInterval(intervalSet,6000)
 
 function miFuncion(a) { 
   $(".colorH1").text(`
