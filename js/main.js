@@ -1,6 +1,6 @@
 const rubro = 
-  [{tipo: "pasteleria"},
-  {tipo: "restaurant"},
+  [{tipo: "pastelería"},
+  {tipo: "restaurante"},
   {tipo: "foodtruck"},
   {tipo: "bar"}];
 
