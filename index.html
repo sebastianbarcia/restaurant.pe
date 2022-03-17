@@ -8,7 +8,7 @@
   <meta name="keywords" content="" />
   <title>Restaurant.pe.mx</title>
   <!--favicon-->
-  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon.svg">
   <!--link a bootstrap-->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <!--link a css-->
@@ -51,6 +51,7 @@
     </nav>
   </header>
   <main>
+    <!--portada-->
     <section class="portadaIndex">	     		
 			<h1>El sistema de punto de<br>venta para tu <span class="colorH1"></span></h1><!--funcion con javascript para cambiar rubro (pasteleria-restaurante-bar-foodtrack)-->
       <p>MAS TIEMPO PARA TI, MAS CONTROL PARA TU NEGOCIO</p>
@@ -61,194 +62,250 @@
     <aside class="btnWatsapp">
 			<a href="https://api.whatsapp.com/send?phone=+525554151049&text=Este es el telefono de restaurant.pe, Este es el telefono de restaurant.pe, escribenos o mandanos un mensaje de voz, estamos dispuestos a ayudarte." class="float" target="_blank"><img src="img/watsapp/whatsapp.svg"></a>
 		</aside>
-    <section id="queHacemos" class="container">
-      <h4>¿Que es <img src="https://www.restaurant.pe/wp-content/uploads/2020/12/cropped-cropped-restaurant.pe_-1.png" alt="logotipo restaurant.pe"
-      width="25%">?</h4>
-      <div class="row justify-content-around align-items-center">        
-        <div class="videoPresentacion col-lg-7">
-          <iframe width="100%" height="450px" src="https://www.youtube.com/embed/tM3y5mDPr5M" title="YouTube video restaurant.pe"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--seccion que hacemos?-->
+    <section class="centrar">
+      <section class="colorColumnCentral d-flex justify-content-center">
+        <section id="queHacemos" class="container">
+          <h4>¿Que es restaurant.pe?</h4>
+          <div class="row justify-content-center align-items-center">        
+            <div class="videoPresentacion col-lg-5">
+              <iframe width="100%" height="250px" style="border-radius: 5px;" src="https://www.youtube.com/embed/tM3y5mDPr5M" title="YouTube video restaurant.pe"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-5">
+              <p class="margenParrafoVideo">Restaurante.pe es una plataforma online que integra un sistema de punto de venta (POS) y un sistema de
+                gestion administrativa, diseñado especialmente para impuslar el crecimiento de negocios gastronomicos como:
+                Restaurantes, Bares, Cafes, Pastelerias, etc.</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="centrar">
+      <section class="colorColumnCentral d-flex justify-content-center">
+        <section class=" d-flex justify-content-center py-5">
+          <img src="img/dispositivos.jpg" class="img-fluid w-75"  alt="">   
+        </section>  
+      </section>
+    </section>
+    <!--seccion caracteristicas-->
+    <section id="funcionalidades" class="container-fluid">     
+      <div class="row funcbox">
+        <h4>Características</h4>
+        <div class="card  col-3 col-md-6 col-sm-12" >
+          <img src="img/Funcionalidades/facil_usar_103831f5b8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fácil de usar</h5>
+            <p class="card-text">Amigable, intuitivo y facil de implementar.</p>
+          </div>
         </div>
-        <div class="col-lg-5">
-          <p class="margenParrafoVideo">Restaurante.pe es una plataforma online que integra un sistema de punto de venta (POS) y un sistema de
-            gestion administrativa, diseñado especialmente para impuslar el crecimiento de negocios gastronomicos como:
-            Restaurantes, Bares, Cafes, Pastelerias, etc.</p>
+        <div class="card  col-3 col-md-6 col-sm-12">
+          <img src="img/Funcionalidades/facil_usar_103831f5b8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">100% seguro</h5>
+            <p class="card-text">Confidencialidad garantizada, limita el acceso de tu personal.</p>
+          </div>
+        </div>
+        <div class="card col-3 col-md-6 col-sm-12" >
+          <img src="img/Funcionalidades/facil_usar_103831f5b8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tecnología Cloud</h5>
+            <p class="card-text">Conserva toda la información de tu negocio en la nube y accede a ella cuando quieras.</p>
+          </div>
+        </div>
+        <div class="card col-3 col-md-6 col-sm-12" >
+          <img src="img/Funcionalidades/facil_usar_103831f5b8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Reportes en tiempo real</h5>
+            <p class="card-text">Monitorea tu negocio de manera remota, revisando ventas y más.</p>
+          </div>
+        </div>     
+    </section>
+ <!--seccion funcionalidades-->
+    <section class="ventajas container colorColumnCentral pb-5">
+      <h4>Funcionalidades</h4>
+       <!--card 1-->
+      <div class="d-flex justify-content-center">
+        <div class="row col-10 d-flex align-items-center justify-content-center cardFunc">
+          <div class="col-7 ps-5">
+            <img class="img-fluid" src="https://www.restaurant.pe/wp-content/uploads/2020/11/gest_admin.jpg" alt="usuario">
+          </div>
+          <div class="textoVentajas col-5">
+            <h5>Gestiona y administra tu negocio</h5>
+            <ul>
+              <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Ventas</li>
+              <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Insumos</li>
+              <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Recetas</li>
+              <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Productos</li>
+              <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Combos</li> 
+              <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Menús</li>          
+            </ul>         
+          </div>    
+        </div>
+      </div>
+      <!--card 2-->
+      <div class="d-flex justify-content-center py-5">
+        <div class="row col-10 d-flex align-items-center cardFunc">
+          <div class="textoVentajas col-5">
+            <h5 class="posicionTexto">Optimiza tus procesos</h5>
+            <ul class="posicionTexto">
+              <li class="d-flex align-items-center justify-content-end">Tiempo de despacho<img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>
+              <li class="d-flex align-items-center justify-content-end">Rotación de mesas<img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>
+              <li class="d-flex align-items-center justify-content-end">Control de almacén<img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>
+              <li class="d-flex align-items-center justify-content-end">Toma de pedidos<img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>       
+            </ul>         
+          </div> 
+          <div class="col-7 pe-5">
+            <img class="img-fluid" src="https://www.restaurant.pe/wp-content/uploads/2020/11/gest_admin.jpg" alt="usuario">
+          </div>   
+        </div>
+      </div>
+      <!--card 3-->
+      <div class="d-flex justify-content-center">
+        <div class="row col-10 d-flex align-items-center justify-content-center cardFunc">
+          <div class="col-7 ps-5">
+            <img class="img-fluid" src="https://www.restaurant.pe/wp-content/uploads/2020/11/gest_admin.jpg" alt="usuario">
+          </div>
+          <div class="textoVentajas col-5">
+            <h5>Monitoreo permanente</h5>
+            <ul>
+              <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Información en tiempo real</li>
+              <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Notifiación via e-mail</li>
+              <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Ticket promedio</li>
+              <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Ranking de productos mas rentables</li>  
+            </ul>         
+          </div>    
+        </div>
+      </div>     
+    </section>
+    <!--Seccion utilidades-->
+    <section class="utilidades container altColorCentral">
+      <h4>Lleva el control de tu negocio</h4>
+      <div class="row boxUtilidades d-flex justify-content-around">
+        <!--primera linea-->
+        <div class="col-3 iconoUtilidades">
+          <img src="img/Funcionalidades/gestion_productos.jpg" class="imgUtilidades img-fluid w-50" alt="">
+          <p class="pt-3">Control de caja</p>
+        </div>
+        <div class="col-3 iconoUtilidades">
+          <img src="Img/Funcionalidades/gestion_productos.jpg" class="imgUtilidades img-fluid w-50" alt="">
+          <p class="pt-3">Control de insumos</p>
+        </div>
+        <div class="col-3 iconoUtilidades">
+          <img src="Img/Funcionalidades/gestion_productos.jpg" class="imgUtilidades img-fluid w-50" alt="">
+          <p class="pt-3">Movimiento entre almacenes</p>
+        </div>
+        <div class="col-3 iconoUtilidades">
+          <img src="Img/Funcionalidades/gestion_productos.jpg" class="imgUtilidades img-fluid w-50" alt="">
+          <p class="pt-3">Control de stock</p>
+        </div>
+      </div>
+      <!--segunda linea-->
+        <div class="row boxUtilidades justify-content-center">
+          <div class="col-3 iconoUtilidades">
+            <img src="Img/Funcionalidades/gestion_productos.jpg" class="imgUtilidades img-fluid w-50" alt="">
+            <p class="pt-3">Gestion de productos</p>
+          </div>
+          <div class="col-3 iconoUtilidades">
+            <img src="Img/Funcionalidades/gestion_productos.jpg" class="imgUtilidades img-fluid w-50" alt="">
+            <p class="pt-3">Registro de recetas</p>
+          </div>
+          <div class="col-3 iconoUtilidades">
+            <img src="Img/Funcionalidades/gestion_productos.jpg" class="imgUtilidades img-fluid w-50" alt="">
+            <p class="pt-3">Delivery</p>
+          </div>
+          <div class="col-3 iconoUtilidades">
+            <img src="Img/Funcionalidades/gestion_productos.jpg" class="imgUtilidades img-fluid w-50" alt="">
+            <p class="pt-3">Facturacion electronica</p>
+          </div>
+        </div>
+    </section>
+    <!--Seccion quienes somos-->
+    <section id="quienesSomos" class="container-fluid">      
+      <h4>¿Quienes Somos?</h4>    
+    <div class="row descripcionQS d-flex align-items-center justify-content-center">
+      <div class="col-lg-6 col-s-12 col-xs-12">
+        <p>Rowe.mx se ha asociado con Restaurant.pe, para diseñar estrategias con el objetivo de impulsar tu negocio y juntos crecer. 
+          Con más de 15 años de experiencia en áreas comerciales y 2 años en el sector gastronómico, Rowe.mx será el mejor aliado de tu 
+          empresa.
+          <br>
+          Además de la distribucion de Restaurant.pe, tendrás un servicio: <br> 1. Personalizado a lo que tu negocio necesita. 
+          <br> 2. Basado en las mejores prácticas de Restaurant.pe <br> 3. Soporte adicional en México, especial para ti. </p>
+      </div>
+      <div class="col-lg-2 col-s-12 col-xs-12">
+        <img class="mx-auto img-fluid imgRowe" src="img/logo/rowe-logo_blanco.svg" alt="rowe">
+      </div>
+    </div>
+  </section>
+  <!--Seccion clientes-->
+  <section class="colorColumnCentral container">
+    <section class="clientes container">
+      <div class="colorClientes">
+        <h4 id="noPad">Nuestros clientes</h4>
+      </div>
+      <div class="testimonios row">
+        <div class="col-3">
+          <div class="cuadro col-3">
+            <img src="img/clientes/cliente-mujer-1.png" alt="cliente" class="bordesImgClients"> 
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, praesentium assumenda vitae delectus porro officiis eum autem voluptatem non. Quasi, nihil. Quisquam similique natus dolor, sequi obcaecati provident? Molestiae, itaque.</p>
+        </div>
+        <div class="col-3">
+          <div class="cuadro col-3 ">       
+            <img src="img/clientes/cliente-hombre-1.png" alt="cliente" class="bordesImgClients">
+          </div>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, praesentium assumenda vitae delectus porro officiis eum autem voluptatem non. Quasi, nihil. Quisquam similique natus dolor, sequi obcaecati provident? Molestiae, itaque.</p>
+        </div>
+        <div class="col-3">
+          <div class="cuadro col-3">
+            <img src="img/clientes/cliente-mujer-2.png" alt="cliente" class="bordesImgClients">
+          </div>     
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, praesentium assumenda vitae delectus porro officiis eum autem voluptatem non. Quasi, nihil. Quisquam similique natus dolor, sequi obcaecati provident? Molestiae, itaque.</p>
         </div>
       </div>
     </section>
-    <section class=" d-flex justify-content-center py-5">
-      <img src="img/dispositivos.jpg" class="m-2 img-fluid w-75"  alt="">   
-    </section>  
-    <section id="funcionalidades" class="container">
-      <div class="row">
-        <h4>Funcionalidades</h4>
-        <div class="col-5 col-7 col-s-12 col-xs-12 cards1 mx-auto">
-          <div class="row row-cols-1 row-cols-sm-2 g-3">
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Tecnología cloud</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, earum.</p>
-                </div>
+  </section>
+      <section class="altColorCentral container">
+        <div>
+          <h5>Marcas que confian en nosotros</h5>
+        </div>
+        <div class="container pb-5">
+          <div class="row justify-content-around pb-5 grupoMarcas">      
+            <img src="img/marcas/1-red-square-restaurant.svg" alt="marca 1" class="col-md-2 col-5 marcas">
+            <img src="img/marcas/la-victoria-de-mexico.svg" alt="marca 2" class="col-md-2 col-5 marcas">
+            <img src="img/marcas/molino-restaurants.svg" alt="marca 3" class="col-md-2 col-5 marcas">
+            <img src="img/marcas/restaurante-girassol.svg" alt="marca 4" class="col-md-2 col-5 marcas">
+            <img src="img/marcas/tosaka-restaurante.svg" alt="marca 5" class="col-md-2 col-5 marcas">     
+        </div>
+      </div>
+    </section>
+    <section class="contacto">
+      <div>
+        <h4>Contactanos</h4>
+      </div>
+      <div class="container formulario">
+        <div class="row col-12 justify-content-center ">
+          <div class="col-3 align-items-center">
+            <h6>¡Gracias por su interés!</h6>
+            <img src="img/contacto/radix-icons_envelope-closed.svg" alt="imagen carta" class="carta w-50">
+            <p>Escribenos aquí, asi te podemos asesorar sobre nuestro servicio de 
+              software gratuito en punto de venta para gastronomia</p>
+          </div>
+          <div class="col-6">
+            <form action="">
+              <input type="text" class="form-control mb-4" placeholder="Nombre">
+              <input type="tel" class="form-control mb-4" placeholder="Telefono">
+              <input type="email" class="form-control mb-4" placeholder="Correo electrónico">
+              <input type="tel" class="form-control mb-4" placeholder="Nombre de su local">
+              <textarea name="Consulta" class="form-control" placeholder="Comentanos en que te podemos ayudar" cols="auto" rows="auto"></textarea>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn btnEnviar">Enviar</button>
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Facil de usar</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quasi.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Reportes en tiempo real</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, ipsa.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Seguridad maxima</h5>
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, obcaecati!</p>
-                </div>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="ventajas">
-      <div class="row listControl ">
-        <div class="col-6 col-s-12 col-xs-12 textoVentajas">
-          <h5>Lleva un mejor control</h5>
-          <ul>
-            <li>Control de Caja</li>
-            <li>Gestión de productos</li>
-            <li>Control de insumos</li>
-            <li>Registro de recetas</li>
-            <li>Movimientos entre almacenes</li>
-            <li>Control de stock</li>
-            <li>Delivery</li>
-            <li>Facturación electronica</li>
-          </ul>
-        </div>
-        <div class="col-5 col-s-12 col-xs-12">
-          <img class="img-fluid" src="https://www.restaurant.pe/wp-content/uploads/2020/11/gest_admin.jpg"
-          alt="usuario">
-        </div>
-        <div class="row">
-        <div class="col-5">
-          <img src="Img/optm_procesos.jpg" alt="" class="img-fluid img-2">
-        </div>
-        <div class="col-6 textoVentajas">
-          <h5>Optimiza tus procesos</h5>
-          <ul>
-            <li>Tiempo de despacho</li>
-            <li>Rotacion de mesas</li>
-            <li>Control de almacen</li>
-            <li>Toma de pedidos</li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 textoVentajas">
-          <h5>Monitoreo permanente</h5>
-          <ul>
-            <li>Información en tiempo real.</li>
-            <li>Notificación vía email.</li>
-            <li>Ticket promedio.</li>
-            <li>Ranking de produtos más rentables</li>
-          </ul>
-        </div>
-        <div class="col-5">
-          <img src="img/monitoreo_permanente.jpg" alt="" class="img-fluid">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="utilidades container">
-  <div class="row">
-    <h3>ICONOS DE UTILIDADES</h3>
-  </div>
-</section>
-<section id="quienesSomos" class="container">
-  <div class="row">
-    <h4>¿Quienes Somos?</h4>
-    <div class="col-8 col-s-12 col-xs-12">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nemo minima beatae aliquid sit tempora
-        quis, perferendis et ab, omnis error rerum architecto. Cumque ipsam recusandae harum dolores, possimus ex?
-        Voluptatum porro, blanditiis ipsa eius ad perspiciatis .
-      </p>
-    </div>
-    <div class="col-4 col-s-12 col-xs-12">
-      <img src="https://www.rowe.mx/-_-/res/55370bc1-ca97-48c8-aefe-68917930d38f/images/files/55370bc1-ca97-48c8-aefe-68917930d38f/e7473bbc-2b08-44f0-a84f-81fdf51e7edd/160-160/893e5ad4b97e52190bc57cce6e0d9ef771940ca1"
-        alt="rowe" width="5%">
-    </div>
-  </div>
-</section>
-<section class="color">
-<section class="clientes container">
-  <div class="colorClientes">
-    <h4 id="noPad">Nuestros clientes</h4>
-  </div>
-  <div class="testimonios">
-    <div>
-      <div class="cuadro">
-        <img src="img/clientes/cliente-mujer-1.png" alt="cliente" class="bordesImgClients"> 
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, praesentium assumenda vitae delectus porro officiis eum autem voluptatem non. Quasi, nihil. Quisquam similique natus dolor, sequi obcaecati provident? Molestiae, itaque.</p>
-    </div>
-    <div>
-      <div class="cuadro">       
-        <img src="img/clientes/cliente-hombre-1.png" alt="cliente" class="bordesImgClients">
-      </div>
-      
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, praesentium assumenda vitae delectus porro officiis eum autem voluptatem non. Quasi, nihil. Quisquam similique natus dolor, sequi obcaecati provident? Molestiae, itaque.</p>
-    </div>
-    <div>
-      <div class="cuadro">
-        <img src="img/clientes/cliente-mujer-2.png" alt="cliente" class="bordesImgClients">
-      </div>     
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, praesentium assumenda vitae delectus porro officiis eum autem voluptatem non. Quasi, nihil. Quisquam similique natus dolor, sequi obcaecati provident? Molestiae, itaque.</p>
-    </div>
-  </div>
-  <div>
-    <div>
-      <h5>Marcas que confian en nosotros</h5>
-    </div>
-    <div class="container pt-2 pb-5">
-      <div class="row justify-content-around pb-5 grupoMarcas">      
-        <img src="img/marcas/1-red-square-restaurant.svg" alt="marca 1" class="col-md-2 col-5 marcas">
-        <img src="img/marcas/la-victoria-de-mexico.svg" alt="marca 2" class="col-md-2 col-5 marcas">
-        <img src="img/marcas/molino-restaurants.svg" alt="marca 3" class="col-md-2 col-5 marcas">
-        <img src="img/marcas/restaurante-girassol.svg" alt="marca 4" class="col-md-2 col-5 marcas">
-        <img src="img/marcas/tosaka-restaurante.svg" alt="marca 5" class="col-md-2 col-5 marcas">     
-     </div>
-    </div>
-  </div>
-</section>
-</section>
-<section class="form">
-  <div class="contactanos">
-    <h4>Contactanos</h4>
-      <form action="">
-        <input type="text" class="form-control mb-4" placeholder="Nombre">
-        <input type="tel" class="form-control mb-4" placeholder="Telefono">
-        <input type="email" class="form-control mb-4" placeholder="Correo electrónico">
-        <input type="tel" class="form-control mb-4" placeholder="Nombre de su local">
-        <textarea name="Consulta" class="form-control" placeholder="Escribenos y nos pondremos en contacto contigo lo antes posible" cols="auto" rows="auto"></textarea>
-        <div class="botones">
-          <button type="button" class="btn btnEnviar">Enviar</button>
-        </div>
-      </form>
-  </div>  
-</div>
-</div>
-</section>
+  </section>
 </main>
 <footer id="footer">
   <div class="container-fluid d-flex justify-content-center pt-5 px-5">

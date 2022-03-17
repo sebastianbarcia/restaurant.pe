@@ -154,79 +154,204 @@ h4,h5{
 .colorH1{
     color: #fd7e14;
 }
-  
-#queHacemos {
+main{
+    background-color: #E6E6E6;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+/*Color y tamaño columna central*/
+.colorColumnCentral{
+    background-color: #ffffff;
+    width: 63%;
+}
+.altColorCentral{
+    @extend.colorColumnCentral;
+    background-color: #F8F8F8;
+}
+
+#queHacemos {  
+    padding-bottom: 3%;
     h4{
-        text-align: center;
-        
+        text-align: center;        
     }
     p{
         text-align: justify;
             font-size: 1.1rem;
         }
     }
-    #funcionalidades {
-        h4{
-            text-align: center;
-            
-        }
-        
-    }
-    .ventajas { 
-        margin: 2rem 0 !important;
-        background-color:rgb(255, 117, 5) ;
-        border-radius: 5px;
-        box-shadow: 0px 4px  rgb(207, 204, 204);
-        img{
-            width: 400px;
-            margin-top: 1rem;
-            border-radius: 5px;
-            box-shadow: 0px 4px  rgba(0, 0, 0, 0.219);
-            
-        }
-        
-        .img-2 {
-            margin-left: 3rem;
-        }
-        .row {
-            margin: 2rem 0 !important;
-            .textoVentajas{
-                margin: 1rem 0 0 3rem;
-                font-size: 1.3rem;
-                color: white;
-                text-align: justify;
-            h5{
-                font-weight: bolder;
-            }
-            
-        }
 
-    }
+/*SECCION CARACTERISTICAS*/
+#funcionalidades .funcbox {
+  background-color: #fd7e14;
+  border-radius: 5px;
+  padding-bottom: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+#funcionalidades .funcbox h4 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#funcionalidades .funcbox .card {
+  margin: 1rem 0.7rem;
+  width: 14rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 15px 5px #FFA048;
+          box-shadow: 0px 0px 15px 5px #FFA048;
+}
+
+#funcionalidades .funcbox .card h5 {
+  padding: 0 !important;
+  color: #fd7e14;
+  font-weight: bolder;
+  margin-top: -2rem;
+}
+
+#funcionalidades .funcbox .card p {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/*SECCION FUNCIONALIDADES*/
+
+.ventajas h4 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+ .ventajas .cardFunc img {
+   margin: 1rem auto;
+    border-radius: 15px;    
+}
+
+.ventajas .row .img-2 {
+  border: 1px solid gray;
+}
+
+.ventajas .row .textoVentajas {
+    .posicionTexto{
+        text-align: right;
+        margin-right: 0rem;
+    }
+  text-align: justify;
+  ul{
+      padding-left: 0%;
+      img{
+          padding-right: 5%;
+          margin: 0% 0%;
+      }
+      .checkList{
+          padding-right: 0%;
+          padding-left: 5%;
+      }     
+  }
+}
+
+.ventajas .row .textoVentajas h5 {
+  color: #fd7e14;
+  font-weight: bolder;
+  text-align: left;
+  margin-right: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0.2rem;
+}
+
+.ventajas .row .textoVentajas ul {
+  text-align: left;
+  margin-right: 2rem;
+}
+
+.ventajas .row .textoVentajas ul li {
+  list-style-type: none;
+}
+
+.ventajas .row .textoVentajasDos h5 {
+  color: #fd7e14;
+  font-weight: bolder;
+  text-align: start;
+}
+
+.ventajas .row .textoVentajasDos ul {
+  padding-left: 0 !important;
+}
+
+.ventajas .row .textoVentajasDos ul li {
+  list-style-type: none;
+}
+/*******utilidades********/
 .utilidades {
-    background-color: gray;
-    text-align: center;
-    height: 300px;
-    border-radius: 5px;
+  text-align: center;
+  .boxUtilidades{
+      padding: 0% 3%;
+  }
+  .iconoUtilidades{
+      margin-bottom: 3%;
+  }
+  .imgUtilidades{
+    border: 2px solid #fd7e14;
+    border-radius: 10%;
+  }
 }
-    #quienesSomos {
-        margin-top: 1rem;
-        h4 {
-            text-align: center;
-            margin-bottom: 1rem;
 
-        }
-        p{
-            text-align: justify;
-            font-size: 1.1rem;
-        }
-    }
+.utilidades h4 {
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 1.5rem;
+}
+
+/**/
+.cardFunc{
+    background-color: #ffffff;
+    border-radius: 20px;    
+    border: 2px solid #fd7e14;
+    height: 310px;
+}
+
+/* SECCION QUIENES SOMOS*/
+#quienesSomos {
+    background-color: #fd7e14;
+    padding-bottom: 4rem;
+    .descripcionQS{
+        margin: 0rem 1rem;
+    }   
+  }
+  
+  #quienesSomos h4 {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+#quienesSomos .descripcionQS p {
+    text-align: justify;
+    font-size: 1.2em;
+    padding-right: 1rem;
+    color: white;
+    line-height: 2.2rem;
+    margin-right: 3rem;
+  }
+
+
+
+
+
 
 /*Clientes*/
-.color{
-    background-color: whitesmoke;
-    padding-top: 5%;
-}
+
 .colorClientes{
     background-color: white;
 }
@@ -238,70 +363,81 @@ h4,h5{
     background-color: white;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-right: 8.5%;
-    padding-left: 8.5%;
+   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    div{
-        width: 20%;            
+     
+    div{           
         p{
         text-align: left;
         padding-top: 12%;
         }
         .bordesImgClients{
             border-radius: 5%;
-            width: 500%;
-            border:2px solid #fd7e14;
-            box-shadow: 0px 5px 5px 2px grey;
+            width: 390%;
+            border:2px solid #fd7e14;           
         }
     }    
 }
 /*Marcas*/
-.marcas{
-    border-radius: 5%;    
-    border:2px solid #fd7e14;
-    box-shadow: 0px 5px 5px 2px grey;
-    padding-right: 0%;
-    padding-left: 0%;
+.grupoMarcas{        
+    .marcas{
+        border-radius: 5%;    
+        border:2px solid #fd7e14;    
+        padding-right: 0%;
+        padding-left: 0%;
+        h5{
+            padding-top: 0rem;
+        }
+    }
 }
-
 /*Formulario de contacto*/
-.contactanos{
-    background-color: #fd7d146b;
-    padding-bottom: 4%;
-    input,textarea{
-        border-color: #fd7e14;
-        border-width: 2px;
-        box-shadow: 0px 5px 5px 2px #fd7e14;
+.contacto{
+    color: white;
+    background-color: #fd7e14;
+    
+}
+.formulario{   
+    h6{
+        color: white;
+        font-size: 110%;
+        font-family: ´rubik-medium´;
+        text-align: center;
+        margin-right: 6rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        color: white;
+        font-family: ´rubik-light´;
+        line-height: 2.1rem;
+        margin-top: 1rem;
+        margin-right: 6rem;
+        text-align: center;
+    }  
+    .carta{
+        padding-left: 4rem;
+    }
+    .row{
+        padding: 0rem 1rem;
+        --bs-gutter-x: 0rem; 
+    }
+        
+    input{
+        border: #fd7e14;            
     }
     textarea{
-        height: 200px;
-    }
+        border: #fd7e14;
+        height: 10rem;
+        }
     button{
-        margin-top: 2%;
-        color: white;
-        font-weight: bold;
-    }    
-}
-.form {
-    text-align: center;
-    margin-top: 1rem;
-    input, textarea{
-    width: 50%;
-    margin: 0.7rem auto;
+        @extend.BtnContactoNav;
+        background-color: white;
+        margin: 2em 0rem;   
+        }
     }
-}
-.btnEnviar {
-    background-color: #fd7e14;
-    box-shadow: 0px 2px 2px gray;
-}
-.btnEnviar:hover{
-    box-shadow: 0px 3px 3px gray;
-    color: white;
-}
-
+     
 /*Footer*/
 footer{
     background-color: #3A3A3A;    
