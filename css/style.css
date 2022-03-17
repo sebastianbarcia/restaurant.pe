@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/**********************************/
+/**********Tipografias*************/
+/**********************************/
+/***********************************/
+/*************Colores***************/
+/***********************************/
+/***********************************************/
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +34,6 @@
   font-family: ´rubik-medium´;
   src: url(../tipografias/static/Rubik-Medium.ttf); }
 
-/*margen a todo el cuerpo menos el barra de navegacion*/
 /***********************************************/
 /**********************HEADER*******************/
 /***********************************************/
@@ -36,15 +42,15 @@
   padding-right: 0%;
   padding-left: 0%; }
 
-.BtnContactoNav {
+.BtnContactoNav, .formulario button {
   background-color: #fd7e14;
   border-color: #fd7e14; }
-  .BtnContactoNav .textoBtnContactoNav {
+  .BtnContactoNav .textoBtnContactoNav, .formulario button .textoBtnContactoNav {
     font-family: ´rubik-medium´;
     text-decoration: none;
     color: white; }
 
-.BtnContactoNav:hover {
+.BtnContactoNav:hover, .formulario button:hover {
   background-color: #FFA048;
   border-color: #FFA048; }
 
@@ -62,6 +68,7 @@
 /**********************TITULOS*******************/
 /***********************************************/
 h4, h5 {
+  font-family: ´rubik-medium´;
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center; }
@@ -111,7 +118,7 @@ h4, h5 {
   .portadaIndex p {
     font-family: ´rubik-regular´;
     letter-spacing: 1px;
-    color: #E6E6E6;
+    color: #FDFDFD;
     padding-left: 18.5%; }
   .portadaIndex div {
     display: flex;
@@ -125,6 +132,7 @@ h4, h5 {
   .portadaIndex #botonSecundario {
     background-color: #fd7e14;
     border-color: #fd7e14;
+    font-family: ´rubik-regular´;
     color: white; }
   .portadaIndex #botonSecundario:hover {
     background-color: #FFA048;
@@ -133,58 +141,163 @@ h4, h5 {
 .colorH1 {
   color: #fd7e14; }
 
-#queHacemos h4 {
-  text-align: center; }
+main {
+  background-color: #E6E6E6; }
 
-#queHacemos p {
-  text-align: justify;
-  font-size: 1.1rem; }
+.centrar {
+  display: flex;
+  justify-content: center; }
 
-#funcionalidades h4 {
-  text-align: center; }
+/**************************************************/
+/*********Color y tamaño columna central***********/
+/**************************************************/
+.colorColumnCentral, .altColorCentral {
+  background-color: #ffffff;
+  width: 63%; }
 
-.ventajas {
-  margin: 2rem 0 !important;
-  background-color: #ff7505;
-  border-radius: 5px;
-  box-shadow: 0px 4px #cfcccc; }
-  .ventajas img {
-    width: 400px;
-    margin-top: 1rem;
-    border-radius: 5px;
-    box-shadow: 0px 4px rgba(0, 0, 0, 0.219); }
-  .ventajas .img-2 {
-    margin-left: 3rem; }
-  .ventajas .row {
-    margin: 2rem 0 !important; }
-    .ventajas .row .textoVentajas {
-      margin: 1rem 0 0 3rem;
-      font-size: 1.3rem;
-      color: white;
-      text-align: justify; }
-      .ventajas .row .textoVentajas h5 {
-        font-weight: bolder; }
+.altColorCentral {
+  background-color: #F8F8F8; }
 
-.utilidades {
-  background-color: gray;
-  text-align: center;
-  height: 300px;
-  border-radius: 5px; }
-
-#quienesSomos {
-  margin-top: 1rem; }
-  #quienesSomos h4 {
-    text-align: center;
-    margin-bottom: 1rem; }
-  #quienesSomos p {
+#queHacemos {
+  padding-bottom: 3%; }
+  #queHacemos h4 {
+    text-align: center; }
+  #queHacemos p {
     text-align: justify;
     font-size: 1.1rem; }
 
-/*Clientes*/
-.color {
-  background-color: whitesmoke;
-  padding-top: 5%; }
+/***********************************************/
+/************Seccion caracteristicas************/
+/***********************************************/
+#funcionalidades {
+  background-color: #fd7e14; }
+  #funcionalidades .funcbox {
+    padding-bottom: 5%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
 
+#funcionalidades .funcbox h4 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white; }
+
+#funcionalidades .funcbox .card {
+  margin: 1rem 0.7rem;
+  width: 14rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 15px 5px #FFA048;
+  box-shadow: 0px 0px 15px 5px #FFA048; }
+
+#funcionalidades .funcbox .card h5 {
+  padding: 0 !important;
+  color: #fd7e14;
+  margin-top: -2rem; }
+
+#funcionalidades .funcbox .card p {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: ´rubik-regular´; }
+
+/*SECCION FUNCIONALIDADES*/
+.ventajas h4 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem; }
+
+.ventajas .cardFunc img {
+  margin: 1rem auto;
+  border-radius: 15px; }
+
+.cardFunc {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 2px solid #fd7e14;
+  height: 310px; }
+
+.imgCardFunc {
+  padding-left: 3rem; }
+
+.ventajas .row .textoVentajas {
+  text-align: justify; }
+  .ventajas .row .textoVentajas .posicionTexto {
+    text-align: right;
+    margin-right: 0rem; }
+  .ventajas .row .textoVentajas ul {
+    padding-left: 0%; }
+    .ventajas .row .textoVentajas ul li {
+      font-family: ´rubik-regular´; }
+    .ventajas .row .textoVentajas ul img {
+      padding-right: 5%;
+      margin: 0% 0%; }
+    .ventajas .row .textoVentajas ul .checkList {
+      padding-right: 0%;
+      padding-left: 5%; }
+
+.ventajas .row .textoVentajas h5 {
+  color: #fd7e14;
+  text-align: left;
+  margin-right: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0.2rem; }
+
+.ventajas .row .textoVentajas ul {
+  text-align: left;
+  margin-right: 2rem; }
+
+.ventajas .row .textoVentajas ul li {
+  list-style-type: none; }
+
+/************************************/
+/***********Utilidades***************/
+/************************************/
+.utilidades {
+  text-align: center; }
+  .utilidades .boxUtilidades {
+    padding: 0% 3%; }
+    .utilidades .boxUtilidades P {
+      font-family: ´rubik-regular´; }
+  .utilidades .iconoUtilidades {
+    margin-bottom: 3%; }
+  .utilidades .imgUtilidades {
+    border: 2px solid #fd7e14;
+    border-radius: 10%; }
+
+.utilidades h4 {
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 1.5rem; }
+
+/* SECCION QUIENES SOMOS*/
+#quienesSomos {
+  background-color: #fd7e14;
+  padding-bottom: 4rem; }
+  #quienesSomos .descripcionQS {
+    margin: 0rem 1rem; }
+
+#quienesSomos h4 {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  color: white; }
+
+#quienesSomos .descripcionQS p {
+  text-align: justify;
+  font-size: 1.2em;
+  padding-right: 1rem;
+  color: white;
+  line-height: 2.2rem;
+  margin-right: 3rem;
+  font-family: ´rubik-regular´; }
+
+/***********************************/
+/************Clientes***************/
+/***********************************/
 .colorClientes {
   background-color: white; }
 
@@ -196,62 +309,74 @@ h4, h5 {
   background-color: white;
   padding-top: 5%;
   padding-bottom: 5%;
-  padding-right: 8.5%;
-  padding-left: 8.5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around; }
-  .testimonios div {
-    width: 20%; }
-    .testimonios div p {
-      text-align: left;
-      padding-top: 12%; }
-    .testimonios div .bordesImgClients {
-      border-radius: 5%;
-      width: 500%;
-      border: 2px solid #fd7e14;
-      box-shadow: 0px 5px 5px 2px grey; }
+  .testimonios div p {
+    text-align: left;
+    padding-top: 12%;
+    font-family: ´rubik-regular´; }
+  .testimonios div .bordesImgClients {
+    border-radius: 5%;
+    width: 390%;
+    border: 2px solid #fd7e14; }
 
-/*Marcas*/
-.marcas {
+/**************************************/
+/****************Marcas****************/
+/**************************************/
+.grupoMarcas .marcas {
   border-radius: 5%;
   border: 2px solid #fd7e14;
-  box-shadow: 0px 5px 5px 2px grey;
   padding-right: 0%;
   padding-left: 0%; }
+  .grupoMarcas .marcas h5 {
+    padding-top: 0rem; }
 
-/*Formulario de contacto*/
-.contactanos {
-  background-color: #fd7d146b;
-  padding-bottom: 4%; }
-  .contactanos input, .contactanos textarea {
-    border-color: #fd7e14;
-    border-width: 2px;
-    box-shadow: 0px 5px 5px 2px #fd7e14; }
-  .contactanos textarea {
-    height: 200px; }
-  .contactanos button {
-    margin-top: 2%;
-    color: white;
-    font-weight: bold; }
+/***************************************/
+/*************Contacto******************/
+/***************************************/
+.contacto {
+  color: white;
+  background-color: #fd7e14; }
 
-.form {
+.formulario h6 {
+  color: white;
+  font-size: 110%;
+  font-family: ´rubik-medium´;
   text-align: center;
-  margin-top: 1rem; }
-  .form input, .form textarea {
-    width: 50%;
-    margin: 0.7rem auto; }
+  margin-right: 6rem;
+  margin-bottom: 1rem; }
 
-.btnEnviar {
-  background-color: #fd7e14;
-  box-shadow: 0px 2px 2px gray; }
+.formulario p {
+  color: white;
+  font-family: ´rubik-light´;
+  line-height: 2.1rem;
+  margin-top: 1rem;
+  margin-right: 6rem;
+  text-align: center; }
 
-.btnEnviar:hover {
-  box-shadow: 0px 3px 3px gray;
-  color: white; }
+.formulario .carta {
+  padding-left: 4rem; }
 
-/*Footer*/
+.formulario .row {
+  padding: 0rem 1rem;
+  --bs-gutter-x: 0rem; }
+
+.formulario input {
+  border: #fd7e14; }
+
+.formulario textarea {
+  border: #fd7e14;
+  height: 10rem; }
+
+.formulario button {
+  background-color: white;
+  margin: 2em 0rem; }
+
+/*************************************/
+/*************Footer******************/
+/*************************************/
 footer {
   background-color: #3A3A3A;
   padding-top: 1%;
@@ -311,19 +436,41 @@ footer {
   color: white;
   font-family: ´rubik-regular´; }
 
-/*Mediaqueries*/
+/*****************************************/
+/**************Mediaqueries***************/
+/*****************************************/
 @media only screen and (max-width: 992px) {
-  /*header*/
+  /***********header************/
   .botonMediaScreen {
     display: none; }
+  /******carril central********/
+  .colorColumnCentral, .altColorCentral {
+    width: 90%; }
+  /********Quienes somos***********/
   .margenParrafoVideo {
     padding-top: 2%;
     padding-bottom: 2%;
     padding-right: 1%;
-    padding-left: 1%; }
+    padding-left: 1%;
+    font-family: ´rubik-regular´; }
+  /********footer*****************/
   .grid1 {
     display: flex;
-    align-items: center; } }
+    align-items: center; }
+  /*******funcionalidades*********/
+  .cardFunc {
+    height: auto; }
+  #displayInverse {
+    display: flex;
+    flex-direction: column-reverse; }
+    #displayInverse .posicionTexto {
+      text-align: left; }
+      #displayInverse .posicionTexto .checkList {
+        padding-left: 0%;
+        padding-right: 5%; }
+    #displayInverse .textoVentajas li {
+      display: flex;
+      flex-direction: row-reverse; } }
 
 @media only screen and (max-width: 768px) {
   .testimonios div {
@@ -341,8 +488,15 @@ footer {
   .marcas {
     margin-bottom: 5%; }
   .form input, .form textarea {
-    width: 85%; } }
+    width: 85%; }
+  .cardFunc {
+    width: 90%; } }
 
 @media only screen and (max-width: 576px) {
   .logoMediaScreen {
-    margin-bottom: 5%; } }
+    margin-bottom: 5%; }
+  /******carril central********/
+  .colorColumnCentral, .altColorCentral {
+    width: auto; }
+  .cardFunc {
+    width: 90%; } }

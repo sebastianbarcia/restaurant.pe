@@ -1,3 +1,6 @@
+@import "variables";
+
+/***********************************************/
 *{
     margin:0;
     padding:0;
@@ -26,11 +29,7 @@
     font-family: ´rubik-medium´;
     src: url(../tipografias/static/Rubik-Medium.ttf);
 }
-/*margen a todo el cuerpo menos el barra de navegacion*/
-// main{
-//     padding-right: 18.5%;
-//     padding-left: 18.5%;
-// }
+
 /***********************************************/
 /**********************HEADER*******************/
 /***********************************************/
@@ -41,34 +40,35 @@
 }
 
 .BtnContactoNav{
-    background-color: #fd7e14;
-    border-color: #fd7e14;   
+    background-color: $naranjaPrincipal;
+    border-color: $naranjaPrincipal;   
         
     .textoBtnContactoNav{
-        font-family: ´rubik-medium´;
+        font-family: $medium;
         text-decoration: none;
         color: white;
     }
 }
 .BtnContactoNav:hover{
-    background-color: #FFA048;
-    border-color: #FFA048;
+    background-color: $naranjaSecundario;
+    border-color: $naranjaSecundario;
 }
 #linkSpaces{
-    font-family: ´rubik-regular´;
+    font-family: $regular;
     color: black;
     font-size: 90%;
     padding-right: 2%;
     padding-left: 2%;
 }
 #linkSpaces:hover{
-    color: #fd7e14;
+    color: $naranjaPrincipal;
 }
 
 /***********************************************/
 /**********************TITULOS*******************/
 /***********************************************/
 h4,h5{
+    font-family: $medium;
     padding-top: 3rem;
     padding-bottom: 3rem;
     text-align: center;
@@ -79,7 +79,7 @@ h4,h5{
 /***********************************************/
 
 .btnWatsapp img {
-    background-color: #25d366;
+    background-color: $watsAppPrimario;
     border-radius: 60px;
     height: 60px;
     width: 60px;
@@ -93,7 +93,7 @@ h4,h5{
     text-align: center; }
   
   .btnWatsapp img:hover {
-    background-color: #70dd98; 
+    background-color: $watsAppSecundario; 
 }
 
 /***********************************************/
@@ -113,18 +113,18 @@ h4,h5{
     padding-top: 6%;
         
     h1{
-    font-family:´rubik-medium´;
+    font-family:$medium;
     text-align: left;
     justify-content: left;
     align-items: center;
-    color: #FDFDFD;
+    color: $portadaColorTipografia;
     padding-left: 18.5%;
     letter-spacing: 1px;
     }
     p{ 
-        font-family:´rubik-regular´;
+        font-family: $regular;
         letter-spacing: 1px;
-        color: #E6E6E6;
+        color: $portadaColorTipografia;
         padding-left: 18.5%;
         
     }
@@ -142,91 +142,205 @@ h4,h5{
     }
     
     #botonSecundario {
-        background-color: #fd7e14;
-        border-color: #fd7e14;
-        color: white; }
+        background-color: $naranjaPrincipal;
+        border-color: $naranjaPrincipal;
+        font-family: $regular;
+        color: $tipografiaBoton; }
       
       #botonSecundario:hover {
-        background-color: #FFA048;
-        border-color: #FFA048;
+        background-color: $naranjaSecundario;
+        border-color: $naranjaSecundario;
     }
 }
 .colorH1{
-    color: #fd7e14;
+    color: $naranjaPrincipal;
 }
-  
-#queHacemos {
+main{
+    background-color: $fondoColor;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+/**************************************************/
+/*********Color y tamaño columna central***********/
+/**************************************************/
+.colorColumnCentral{
+    background-color: $colorColumnCentral;
+    width: 63%;
+}
+.altColorCentral{
+    @extend.colorColumnCentral;
+    background-color: $altColorCentral;
+}
+
+#queHacemos {  
+    padding-bottom: 3%;
     h4{
-        text-align: center;
-        
+        text-align: center;        
     }
     p{
         text-align: justify;
             font-size: 1.1rem;
         }
     }
-    #funcionalidades {
-        h4{
-            text-align: center;
-            
-        }
-        
-    }
-    .ventajas { 
-        margin: 2rem 0 !important;
-        background-color:rgb(255, 117, 5) ;
-        border-radius: 5px;
-        box-shadow: 0px 4px  rgb(207, 204, 204);
-        img{
-            width: 400px;
-            margin-top: 1rem;
-            border-radius: 5px;
-            box-shadow: 0px 4px  rgba(0, 0, 0, 0.219);
-            
-        }
-        
-        .img-2 {
-            margin-left: 3rem;
-        }
-        .row {
-            margin: 2rem 0 !important;
-            .textoVentajas{
-                margin: 1rem 0 0 3rem;
-                font-size: 1.3rem;
-                color: white;
-                text-align: justify;
-            h5{
-                font-weight: bolder;
-            }
-            
-        }
-
+/***********************************************/
+/************Seccion caracteristicas************/
+/***********************************************/
+#funcionalidades{ 
+    background-color: $naranjaPrincipal;
+.funcbox {
+ 
+  padding-bottom: 5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
     }
 }
+#funcionalidades .funcbox h4 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#funcionalidades .funcbox .card {
+  margin: 1rem 0.7rem;
+  width: 14rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 15px 5px $naranjaSecundario;
+          box-shadow: 0px 0px 15px 5px $naranjaSecundario;
+}
+
+#funcionalidades .funcbox .card h5 {
+  padding: 0 !important;
+  color: $naranjaPrincipal;
+  margin-top: -2rem;
+}
+
+#funcionalidades .funcbox .card p {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-family: $regular;
+}
+
+/*SECCION FUNCIONALIDADES*/
+
+.ventajas h4 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.ventajas .cardFunc img {
+   margin: 1rem auto;
+   border-radius: 15px;    
+}
+.cardFunc{
+    background-color: #ffffff;
+    border-radius: 20px;    
+    border: 2px solid $naranjaPrincipal;
+    height: 310px;
+}
+.imgCardFunc{
+    padding-left: 3rem;
+}
+.ventajas .row .textoVentajas {
+    .posicionTexto{
+        text-align: right;
+        margin-right: 0rem;
+    }
+  text-align: justify;
+  ul{
+      padding-left: 0%;
+      li{
+          font-family: $regular;
+      }
+      img{
+          padding-right: 5%;
+          margin: 0% 0%;
+      }
+      .checkList{
+          padding-right: 0%;
+          padding-left: 5%;
+      }     
+  }
+}
+
+.ventajas .row .textoVentajas h5 {
+  color: $naranjaPrincipal;
+  text-align: left;
+  margin-right: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0.2rem;
+}
+
+.ventajas .row .textoVentajas ul {
+  text-align: left;
+  margin-right: 2rem;
+}
+
+.ventajas .row .textoVentajas ul li {
+  list-style-type: none;
+}
+/************************************/
+/***********Utilidades***************/
+/************************************/
 .utilidades {
-    background-color: gray;
+  text-align: center;
+  .boxUtilidades{
+      padding: 0% 3%;
+      P{
+        font-family: $regular;
+      }
+  }
+  .iconoUtilidades{
+      margin-bottom: 3%;
+  }
+  .imgUtilidades{
+    border: 2px solid $naranjaPrincipal;
+    border-radius: 10%;
+  }
+}
+
+.utilidades h4 {
+  text-align: center;
+  padding-top: 4rem;
+  font-size: 1.5rem;
+}
+
+/* SECCION QUIENES SOMOS*/
+#quienesSomos {
+    background-color: $naranjaPrincipal;
+    padding-bottom: 4rem;
+    .descripcionQS{
+        margin: 0rem 1rem;
+    }   
+}
+  
+  #quienesSomos h4 {
     text-align: center;
-    height: 300px;
-    border-radius: 5px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+#quienesSomos .descripcionQS p {
+    text-align: justify;
+    font-size: 1.2em;
+    padding-right: 1rem;
+    color: white;
+    line-height: 2.2rem;
+    margin-right: 3rem;
+    font-family: $regular;
 }
-    #quienesSomos {
-        margin-top: 1rem;
-        h4 {
-            text-align: center;
-            margin-bottom: 1rem;
-
-        }
-        p{
-            text-align: justify;
-            font-size: 1.1rem;
-        }
-    }
-
-/*Clientes*/
-.color{
-    background-color: whitesmoke;
-    padding-top: 5%;
-}
+/***********************************/
+/************Clientes***************/
+/***********************************/
 .colorClientes{
     background-color: white;
 }
@@ -238,73 +352,90 @@ h4,h5{
     background-color: white;
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-right: 8.5%;
-    padding-left: 8.5%;
+   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    div{
-        width: 20%;            
+     
+    div{           
         p{
         text-align: left;
         padding-top: 12%;
+        font-family: $regular;
         }
         .bordesImgClients{
             border-radius: 5%;
-            width: 500%;
-            border:2px solid #fd7e14;
-            box-shadow: 0px 5px 5px 2px grey;
+            width: 390%;
+            border:2px solid $naranjaPrincipal;           
         }
     }    
 }
-/*Marcas*/
-.marcas{
-    border-radius: 5%;    
-    border:2px solid #fd7e14;
-    box-shadow: 0px 5px 5px 2px grey;
-    padding-right: 0%;
-    padding-left: 0%;
+/**************************************/
+/****************Marcas****************/
+/**************************************/
+.grupoMarcas{        
+    .marcas{
+        border-radius: 5%;    
+        border:2px solid $naranjaPrincipal;    
+        padding-right: 0%;
+        padding-left: 0%;
+        h5{
+            padding-top: 0rem;
+        }
+    }
 }
-
-/*Formulario de contacto*/
-.contactanos{
-    background-color: #fd7d146b;
-    padding-bottom: 4%;
-    input,textarea{
-        border-color: #fd7e14;
-        border-width: 2px;
-        box-shadow: 0px 5px 5px 2px #fd7e14;
+/***************************************/
+/*************Contacto******************/
+/***************************************/
+.contacto{
+    color: white;
+    background-color: $naranjaPrincipal;
+    
+}
+.formulario{   
+    h6{
+        color: white;
+        font-size: 110%;
+        font-family: $medium;
+        text-align: center;
+        margin-right: 6rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        color: white;
+        font-family: $light;
+        line-height: 2.1rem;
+        margin-top: 1rem;
+        margin-right: 6rem;
+        text-align: center;
+    }  
+    .carta{
+        padding-left: 4rem;
+    }
+    .row{
+        padding: 0rem 1rem;
+        --bs-gutter-x: 0rem; 
+    }
+        
+    input{
+        border: $naranjaPrincipal;            
     }
     textarea{
-        height: 200px;
-    }
+        border: $naranjaPrincipal;
+        height: 10rem;
+        }
     button{
-        margin-top: 2%;
-        color: white;
-        font-weight: bold;
-    }    
-}
-.form {
-    text-align: center;
-    margin-top: 1rem;
-    input, textarea{
-    width: 50%;
-    margin: 0.7rem auto;
+        @extend.BtnContactoNav;
+        background-color: white;
+        margin: 2em 0rem;   
+        }
     }
-}
-.btnEnviar {
-    background-color: #fd7e14;
-    box-shadow: 0px 2px 2px gray;
-}
-.btnEnviar:hover{
-    box-shadow: 0px 3px 3px gray;
-    color: white;
-}
-
-/*Footer*/
+/*************************************/     
+/*************Footer******************/
+/*************************************/
 footer{
-    background-color: #3A3A3A;    
+    background-color: $footerBackGround;    
     padding-top: 1%;
     padding-bottom: 2%;
     .grid1{
@@ -314,7 +445,7 @@ footer{
         h6{
             padding-top: 5%;
             color: white;
-            font-family:´rubik-medium´;
+            font-family: $medium;
         }    
     }
 }
@@ -373,22 +504,52 @@ footer{
     color: white;
     font-family:´rubik-regular´;
 }
-/*Mediaqueries*/
+
+/*****************************************/
+/**************Mediaqueries***************/
+/*****************************************/
+
 @media only screen and (max-width: 992px) {
-    /*header*/
+    /***********header************/
     .botonMediaScreen{
         display: none;
     }
+    /******carril central********/
+    .colorColumnCentral{
+        width: 90%;
+    }
+    /********Quienes somos***********/
     .margenParrafoVideo {
         padding-top: 2%;
         padding-bottom: 2%;
         padding-right: 1%;
-        padding-left: 1%;        
+        padding-left: 1%; 
+        font-family: $regular;       
        } 
+    /********footer*****************/    
     .grid1{
         display: flex;
         align-items: center;     
     } 
+    /*******funcionalidades*********/
+    .cardFunc{
+        height: auto;
+    }    
+    #displayInverse{
+        display: flex;
+        flex-direction: column-reverse;
+        .posicionTexto{
+            text-align: left;
+            .checkList{
+                padding-left: 0%;
+                padding-right: 5%;
+            }
+        }
+         .textoVentajas li{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -401,8 +562,7 @@ footer{
                 justify-content: center;
             }
             .bordesImgClients{
-                width: 70%;
-               
+                width: 70%;               
             }
             p{
                 padding-top: 5%;
@@ -416,12 +576,20 @@ footer{
     }
     .form input, .form textarea{
         width: 85%;
-    }
-    
-    
+    }  
+    .cardFunc{
+        width: 90%;
+    } 
 }
 @media only screen and (max-width: 576px){
     .logoMediaScreen{
         margin-bottom: 5%;
     }
+     /******carril central********/
+     .colorColumnCentral{
+        width: auto;
+    }
+    .cardFunc{
+        width: 90%;
+    } 
 }
