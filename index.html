@@ -340,12 +340,12 @@
               software gratuito en punto de venta para gastronomia</p>
           </div>
           <div class="col-6 col-md-7 col-sm-12">
-            <form action="">
-              <input type="text" class="form-control mb-4" required placeholder="Nombre">
-              <input type="tel" class="form-control mb-4" required placeholder="Telefono">
-              <input type="email" class="form-control mb-4" required placeholder="Correo electrónico">
-              <input type="tel" class="form-control mb-4" required placeholder="Nombre de su local">
-              <textarea name="Consulta" class="form-control" placeholder="Comentanos en que te podemos ayudar"
+            <form method="post" action="../restaurant.pe/php/formulario.php">
+              <input type="text" class="form-control mb-4" name="nombre" required placeholder="Nombre">
+              <input type="tel" class="form-control mb-4" name="telefono" required placeholder="Telefono">
+              <input type="email" class="form-control mb-4" name="email" required placeholder="Correo electrónico">
+              <input type="tel" class="form-control mb-4" name="local" required placeholder="Nombre de su local">
+              <textarea name="mensaje" class="form-control" placeholder="Comentanos en que te podemos ayudar"
                 cols="auto" rows="auto"></textarea>
               <div class="d-flex justify-content-center">
                 <button type="button" class="btn btn-primary btnEnviar">Enviar</button>
