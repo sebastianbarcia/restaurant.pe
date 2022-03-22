@@ -589,6 +589,15 @@ footer{
     .boxContacto {
         margin: 0 !important;
     }
+    #footer {
+        .contenedorLogo{
+            a{
+                img{
+                    width: 150px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px){
@@ -637,4 +646,10 @@ footer{
     .cardFunc{
         width: 90%;
     } 
+    #footer{
+        text-align: center;
+        .grid1{
+            justify-content: center;
+        }
+    }
 }

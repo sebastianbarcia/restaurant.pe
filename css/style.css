@@ -672,6 +672,9 @@ footer .grid1 h6 {
   .boxContacto {
     margin: 0 !important;
   }
+  #footer .contenedorLogo a img {
+    width: 150px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -722,6 +725,14 @@ footer .grid1 h6 {
   }
   .cardFunc {
     width: 90%;
+  }
+  #footer {
+    text-align: center;
+  }
+  #footer .grid1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
