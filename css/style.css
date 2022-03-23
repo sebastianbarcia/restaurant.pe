@@ -224,6 +224,7 @@ main {
 
 #queHacemos h4 {
   text-align: center;
+  padding-top: 5rem;
 }
 
 #queHacemos p {
@@ -247,7 +248,7 @@ main {
 
 #funcionalidades h4 {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 1rem;
   font-size: 1.5rem;
   color: white;
@@ -365,12 +366,11 @@ main {
 /* SECCION QUIENES SOMOS*/
 #quienesSomos {
   background-color: #fd7e14;
-  padding-bottom: 4rem;
 }
 
 #quienesSomos h4 {
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   font-size: 1.5rem;
   color: white;
@@ -390,6 +390,15 @@ main {
   font-family: ´rubik-regular´;
 }
 
+#quienesSomos .descripcionQS .logoSoftwares {
+  width: 175px;
+  max-height: 75px;
+  background-color: white;
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
 /***********************************/
 /************Clientes***************/
 /***********************************/
@@ -400,6 +409,11 @@ main {
 .colorClientes #noPad {
   padding-bottom: 0%;
   margin-bottom: 0;
+  padding-top: 4rem;
+}
+
+.video {
+  margin-top: 2rem;
 }
 
 .testimonios {
@@ -451,6 +465,10 @@ main {
 .contacto {
   color: white;
   background-color: #fd7e14;
+}
+
+.contacto h4 {
+  padding-top: 5rem;
 }
 
 .contacto .formulario h6 {
@@ -640,9 +658,15 @@ footer .grid1 h6 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #displayInverse .posicionTexto {
-    text-align: left;
+    text-align: center !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   #displayInverse .posicionTexto .checkList {
     padding-left: 0%;
@@ -656,6 +680,9 @@ footer .grid1 h6 {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   #quienesSomos .boxImgRowe {
     text-align: center;
@@ -668,6 +695,9 @@ footer .grid1 h6 {
   }
   #quienesSomos p {
     margin-right: 0 !important;
+  }
+  #quienesSomos .softwares {
+    text-align: center;
   }
   .boxContacto {
     margin: 0 !important;
@@ -726,6 +756,14 @@ footer .grid1 h6 {
   .cardFunc {
     width: 90%;
   }
+  /* quienes somos*/
+  #quienesSomos .softwares a {
+    margin: -0.5rem;
+  }
+  #quienesSomos .boxImgRowe {
+    margin-top: 1rem;
+  }
+  /*footer*/
   #footer {
     text-align: center;
   }

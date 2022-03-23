@@ -180,7 +180,8 @@ main{
 #queHacemos {  
     padding-bottom: 3%;
     h4{
-        text-align: center;        
+        text-align: center; 
+        padding-top: 5rem;       
     }
     p{
         text-align: justify;
@@ -192,6 +193,7 @@ main{
 /***********************************************/
 #funcionalidades{ 
     background-color: $naranjaPrincipal;
+    
 .funcbox {
  
   padding-bottom: 5%;
@@ -201,7 +203,7 @@ main{
     }
     h4 {
         text-align: center;
-        padding-top: 2rem;
+        padding-top: 5rem;
         padding-bottom: 1rem;
         font-size: 1.5rem;
         color: white;
@@ -313,10 +315,10 @@ main{
 /* SECCION QUIENES SOMOS*/
 #quienesSomos {
     background-color: $naranjaPrincipal;
-    padding-bottom: 4rem;
+    
     h4 {
         text-align: center;
-        padding-top: 4rem;
+        padding-top: 5rem;
         padding-bottom: 2rem;
         font-size: 1.5rem;
         color: white;
@@ -331,11 +333,20 @@ main{
             line-height: 1.5rem;
             margin-right: 3rem;
             font-family: $regular;
+            
+        }
+        .logoSoftwares {
+            width: 175px;
+            max-height: 75px;
+            background-color: white;
+            margin: 2rem;
+            padding: 1.5rem;
+            border-radius: 15px;
         }
     }   
+    
 }
   
-
 
 /***********************************/
 /************Clientes***************/
@@ -345,9 +356,13 @@ main{
     #noPad{
         padding-bottom: 0%;
         margin-bottom: 0;
+        padding-top: 4rem;
     }
 }
-
+.video {
+    margin-top: 2rem;
+   
+}
 .testimonios{  
     background-color: white;
     padding-top: 5%;
@@ -391,6 +406,9 @@ main{
 .contacto{
     color: white;
     background-color: $naranjaPrincipal;
+    h4{
+        padding-top: 5rem;
+    }
     .formulario{   
         h6{
             color: white;
@@ -562,8 +580,10 @@ footer{
     #displayInverse{
         display: flex;
         flex-direction: column-reverse;
+        justify-content: center;
         .posicionTexto{
-            text-align: left;
+            text-align: center !important;
+            align-self: center;
             .checkList{
                 padding-left: 0%;
                 padding-right: 5%;
@@ -572,6 +592,7 @@ footer{
          .textoVentajas li{
             display: flex;
             flex-direction: row-reverse;
+            justify-content: center !important;
         }
     }
     #quienesSomos{
@@ -584,6 +605,10 @@ footer{
         }
         p{
             margin-right: 0 !important;
+        }
+        .softwares {
+            text-align: center;
+            
         }
     }
     .boxContacto {
@@ -646,6 +671,20 @@ footer{
     .cardFunc{
         width: 90%;
     } 
+    /* quienes somos*/
+    #quienesSomos {
+        .softwares{
+            a{
+                margin: -0.5rem
+            }
+        }
+        .boxImgRowe{
+            margin-top: 1rem;
+        }
+    }
+
+
+    /*footer*/
     #footer{
         text-align: center;
         .grid1{
