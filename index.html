@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +16,27 @@
   <!--link a fuentes tipograficas-->
   <script src="https://kit.fontawesome.com/63551b8b33.js" crossorigin="anonymous"></script>
   <!--link a animaciones-->
-  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css"/>
+   <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4715987378526982'); 
+    fbq('track', 'PageView');
+    fbq('track', 'CompleteRegistration');
+    </script>
+    <noscript>
+    <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=4715987378526982&ev=PageView
+    &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -28,7 +47,7 @@
         <div class="row col-8 align-items-center justify-content-center">
           <div class="justify-content-center col-lg-2 row" id="header">
             <div class="col-lg-12 col-sm-6">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand" href="#portadaSelect">
                 <img src="img/logo/logo-restaurantpe.svg" alt="logotipo restaurant.pe"
                   class="d-inline-block align-text-top logoMediaScreen">
               </a>
@@ -49,7 +68,7 @@
           </div>
           <div class="col-lg-2 col-sm-12 d-flex justify-content-end" id="header">
             <button type="button" class="btn btn-primary btn-sm BtnContactoNav col-12 botonMediaScreen"><a
-                href="#contacto" class="textoBtnContactoNav">Contáctenos</a></button>
+                href="#contactar" class="textoBtnContactoNav">Contáctenos</a></button>
           </div>
         </div>
       </div>
@@ -58,17 +77,18 @@
   <!--Main-->
   <main>
     <!--Portada-->
-    <section class="portadaIndex">
+    <section class="portadaIndex" id="portadaSelect">
       <h1>El sistema de punto de<br>venta para tu <span class="colorH1"></span></h1>
       <!--funcion con javascript para cambiar rubro (pasteleria-restaurante-bar-foodtrack)-->
       <p>MAS TIEMPO PARA TI, MAS CONTROL PARA TU NEGOCIO</p>
       <div>
-        <a href="#contacto"><button type="button" class="btn btn-secondary btn-lg" id="botonSecundario">Empieza
+        <a href="#contactar"><button type="button" class="btn btn-secondary btn-lg" id="botonSecundario">Empieza
             ahora</button></a>
       </div>
     </section>
+    <!--Watsapp-->
     <aside class="btnWatsapp">
-      <a href="https://api.whatsapp.com/send?phone=+525554151049&text=Este es el telefono de restaurant.pe, Este es el telefono de restaurant.pe, escribenos o mandanos un mensaje de voz, estamos dispuestos a ayudarte."
+      <a href="https://api.whatsapp.com/send?phone=+528115072209&text=Este es el teléfono de restaurant.pe, escríbenos o mándanos un mensaje de voz, estamos dispuestos a ayudarte!."
         class="float" target="_blank"><img src="img/watsapp/whatsapp.svg"></a>
     </aside>
     <!--Seccion que hacemos?-->
@@ -104,21 +124,21 @@
     <section id="funcionalidades" class="container-fluid">
       <div class="row funcbox">
         <h4>Características</h4>
-        <div class="card col-lg-3 col-md-6 col-sm-12">
+        <div class="card col-lg-3 col-md-6 col-sm-12 wow animate__animated animate__zoomIn">
           <img src="img/Funcionalidades/facil_usar_103831f5b8.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Fácil de usar</h5>
             <p class="card-text">Amigable, intuitivo y facil de implementar.</p>
           </div>
         </div>
-        <div class="card col-lg-3 col-md-6 col-sm-12">
+        <div class="card col-lg-3 col-md-6 col-sm-12 wow animate__animated animate__zoomIn">
           <img src="img/Funcionalidades/100_seguro.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">100% seguro</h5>
             <p class="card-text">Confidencialidad garantizada, limita el acceso de tu personal.</p>
           </div>
         </div>
-        <div class="card col-lg-3 col-md-6 col-sm-12">
+        <div class="card col-lg-3 col-md-6 col-sm-12 wow animate__animated animate__zoomIn">
           <img src="img/Funcionalidades/tecnologia_cloud.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Tecnología Cloud</h5>
@@ -126,7 +146,7 @@
             </p>
           </div>
         </div>
-        <div class="card col-lg-3 col-md-6 col-sm-12">
+        <div class="card col-lg-3 col-md-6 col-sm-12 wow animate__animated animate__zoomIn">
           <img src="img/Funcionalidades/reportes_tiempo_real.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Reportes en tiempo real</h5>
@@ -135,83 +155,68 @@
         </div>
     </section>
     <!--seccion funcionalidades-->
-    <section class="centrar ">
-      <div class="ventajas  row colorColumnCentral pb-5">
-        <h4>Funcionalidades</h4>
-        <!--card 1-->
-        <div class="d-flex  boxFuncionalidad justify-content-center">
-          <div class="row col-lg-10 col-md-8 d-flex align-items-center justify-content-center cardFunc">
-            <div class="col-lg-7 col-sm-12">
-              <img class="img-fluid imgFuncionalidad "
-                src="https://www.restaurant.pe/wp-content/uploads/2020/11/gest_admin.jpg" alt="usuario">
-            </div>
-            <div class="textoVentajas col-lg-5 col-sm-12">
-              <h5 class="col-sm-12 col-lg-12">Gestiona y administra tu negocio</h5>
-              <ul class="col-sm-12 col-lg-12">
-                <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg"
-                    alt="check list">Ventas</li>
-                <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg"
-                    alt="check list">Insumos</li>
-                <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg"
-                    alt="check list">Recetas</li>
-                <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg"
-                    alt="check list">Productos</li>
-                <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg"
-                    alt="check list">Combos</li>
-                <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg"
-                    alt="check list">Menús</li>
-              </ul>
-            </div>
-          </div>
+ <section class="centrar">
+  <div class="ventajas  row colorColumnCentral pb-5">
+    <h4>Funcionalidades</h4>
+     <!--card 1-->
+    <div class="d-flex justify-content-center wow animate__animated animate__slideInRight">
+      <div class="row col-lg-10 col-md-8 d-flex align-items-center justify-content-center cardFunc">
+        <div class="col-lg-7 col-sm-12">
+          <img class="img-fluid " src="https://www.restaurant.pe/wp-content/uploads/2020/11/gest_admin.jpg"  alt="usuario">
         </div>
-        <!--card 2-->
-        <div class="d-flex  boxFuncionalidad justify-content-center py-5">
-          <div class="row col-lg-10 col-md-8  d-flex align-items-center cardFunc" id="displayInverse">
-            <div class="textoVentajas col-lg-5 col-sm-12">
-              <h5 class="posicionTexto col-sm-12 col-lg-12">Optimiza tus procesos</h5>
-              <ul class="posicionTexto col-sm-12 col-lg-12">
-                <li class="d-flex align-items-center justify-content-end">Tiempo de despacho<img
-                    src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>
-                <li class="d-flex align-items-center justify-content-end">Rotación de mesas<img
-                    src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>
-                <li class="d-flex align-items-center justify-content-end">Control de almacén<img
-                    src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>
-                <li class="d-flex align-items-center justify-content-end">Toma de pedidos<img
-                    src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>
-              </ul>
-            </div>
-            <div class="col-lg-7 col-sm-12">
-              <img class="img-fluid imgFuncionalidad" src="img/optm_procesos.jpg" alt="usuario">
-            </div>
-          </div>
+        <div class="textoVentajas col-lg-5 col-sm-12">
+          <h5 class="col-sm-12 col-lg-12">Gestiona y administra tu negocio</h5>
+          <ul class="col-sm-12 col-lg-12">
+            <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Ventas</li>
+            <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Insumos</li>
+            <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Recetas</li>
+            <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Productos</li>
+            <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Combos</li> 
+            <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Menús</li>          
+          </ul>         
+        </div>    
+      </div>
+    </div>
+    <!--card 2-->
+    <div class="d-flex justify-content-center py-5 wow animate__animated animate__slideInLeft">
+      <div class="row col-lg-10 col-md-8  d-flex align-items-center cardFunc" id="displayInverse">
+        <div class="textoVentajas col-lg-5 col-sm-12">
+          <h5 class="posicionTexto col-sm-12 col-lg-12">Optimiza tus procesos</h5>
+          <ul class="posicionTexto col-sm-12 col-lg-12">
+            <li class="d-flex align-items-center justify-content-end">Tiempo de despacho<img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>
+            <li class="d-flex align-items-center justify-content-end">Rotación de mesas<img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>
+            <li class="d-flex align-items-center justify-content-end">Control de almacén<img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>
+            <li class="d-flex align-items-center justify-content-end">Toma de pedidos<img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list" class="checkList"></li>       
+          </ul>         
+        </div> 
+        <div class="col-lg-7 col-sm-12">
+          <img class="img-fluid" src="img/optm_procesos.jpg" alt="usuario">
+        </div>   
+      </div>
+    </div>
+    <!--card 3-->
+    <div class="d-flex justify-content-center wow animate__animated animate__slideInRight">
+      <div class="row col-lg-10 col-md-8 d-flex align-items-center justify-content-center cardFunc">
+        <div class="col-lg-7 col-sm-12">
+          <img class="img-fluid" src="img/monitoreo_permanente.jpg" alt="usuario">
         </div>
-        <!--card 3-->
-        <div class="d-flex boxFuncionalidad  justify-content-center">
-          <div class="row col-lg-10 col-md-8 d-flex align-items-center justify-content-center cardFunc">
-            <div class="col-lg-7 col-sm-12">
-              <img class="img-fluid imgFuncionalidad" src="img/monitoreo_permanente.jpg" alt="usuario">
-            </div>
-            <div class="textoVentajas col-lg-5 col-sm-12">
-              <h5 class="col-sm-12 col-lg-12">Monitoreo permanente</h5>
-              <ul class="col-sm-12 col-lg-12">
-                <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg"
-                    alt="check list">Información en tiempo real</li>
-                <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg"
-                    alt="check list">Notifiación via email</li>
-                <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg"
-                    alt="check list">Ticket promedio</li>
-                <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg"
-                    alt="check list">Ranking de productos mas rentables</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </section>
+        <div class="textoVentajas col-lg-5 col-sm-12">
+          <h5 class="col-sm-12 col-lg-12">Monitoreo permanente</h5>
+          <ul class="col-sm-12 col-lg-12">
+            <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">información en tiempo real</li>
+            <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Notifiación via email</li>
+            <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Ticket promedio</li>
+            <li class="d-flex align-items-center"><img src="img/seccion_funcionalidades/vector-check_ok.svg" alt="check list">Ranking de productos mas rentables</li>
+          </ul>         
+        </div>    
+      </div>
+    </div>
+  </section>
     <!--Seccion utilidades-->
     <section class="centrar ">
       <div class="utilidades altColorCentral">
         <h4>Lleva el control de tu negocio</h4>
-        <div class="row boxUtilidades d-flex justify-content-around">
+        <div class="row boxUtilidades d-flex justify-content-around wow animate__animated animate__slideInLeft">
           <!--primera linea-->
           <div class="col-6 col-md-3 iconoUtilidades">
             <img src="img/Funcionalidades/contro_caja.jpg" class="imgUtilidades img-fluid w-50" alt="">
@@ -231,7 +236,7 @@
           </div>
         </div>
         <!--segunda linea-->
-        <div class="row boxUtilidades justify-content-center">
+        <div class="row boxUtilidades justify-content-center wow animate__animated animate__slideInRight">
           <div class="col-6 col-md-3 iconoUtilidades">
             <img src="img/Funcionalidades/gestion_productos.jpg" class="imgUtilidades img-fluid w-50" alt="">
             <p class="pt-3">Gestion de productos</p>
@@ -267,22 +272,18 @@
             <br> 2. Basado en las mejores prácticas de Restaurant.pe <br> 3. Soporte adicional en México, especial para
             ti.
           </p>
-          <div class="softwares">
-            <p >
-              Además con nosotros trabajan otro tipos de softwares</p>
-              <a href="https://www.rowe.mx/quipupos" target="_blank"><img src="img/quipupos-azul-149x40.png"
-                  class="img-fluid logoSoftwares" alt="logoQuipupos"></a>
-              <a href="https://www.rowe.mx/go4clients" target="_blank"><img src="img/logo/logo G4C.svg"
-                  class="img-fluid logoSoftwares" alt="logoG4C"></a>
-            
+          <div class="softwares row">
+            <p class="pt-3">Además con nosotros trabajan otro tipos de softwares:</p>
+            <a href="https://www.rowe.mx/quipupos" target="_blank" class="col-md-6 col-sm-12"><img src="img/logo/quickpos.svg"
+              class="img-fluid logoSoftwares" alt="logoQuipupos"></a>
+            <a href="https://www.rowe.mx/go4clients" target="_blank" class="col-md-6 col-sm-12"><img src="img/logo/logo-G4C.png"
+              class="img-fluid logoSoftwares" alt="logoG4C"></a>
           </div>
         </div>
         <div class="boxImgRowe col-lg-2 col-s-12 col-xs-12">
-          <a href="https://www.rowe.mx" target="_blank"><img class="mx-auto img-fluid imgRowe"
-              src="img/logo/rowe-logo_blanco.svg" alt="rowe"></a>
+          <a href="https://www.rowe.mx" target="_blank"><img class="mx-auto img-fluid imgRowe wow animate__animated animate__slideInRight" id="imgRoweMovil" src="img/logo/rowe-logo_blanco.svg" alt="rowe"></a>
         </div>
       </div>
-
     </section>
 
     <!--Seccion clientes-->
@@ -296,65 +297,88 @@
             class="img-fluid"></video>
         </div>
         <div class="testimonios row">
-          <div class="col-3">
-            <div class="cuadro col-3 ">
-              <img src="img/clientes/cliente-hombre-1.png" alt="cliente" class="bordesImgClients">
+          <div class="row justify-content-center align-items-center wow animate__animated animate__slideInRight">
+            <div class="cuadro col-lg-3 col-sm-4">
+              <img src="img/clientes/fraylogo.svg" alt="cliente" class="bordesImgClients col-lg-10 col-sm-12">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, praesentium assumenda vitae delectus
-              porro officiis eum autem voluptatem non. Quasi, nihil. Quisquam similique natus dolor, sequi obcaecati
-              provident? Molestiae, itaque.</p>
-          </div>
-          <div class="col-3">
-            <div class="cuadro col-3">
-              <img src="img/clientes/cliente-mujer-2.png" alt="cliente" class="bordesImgClients">
+            <div class="col-lg-8 col-sm-8">
+            <p>"Restaurant.pe nos ha ayudado a controlar mejor la administración del negocio. Con la plataforma, 
+              podemos revisar reportes de ventas, insumos, y financieros que nos dan ideas para mejorar. 
+              Además la herramienta de Menú Online, ha provocado que demos un mejor servicio a nuestros clientes, 
+              ya que no pagan sobrecostos por hacer pedidos a nosotros y es una interfaz amigable para que ellos hagan pedidos y 
+              hasta paguen con tarjeta o efectivo!"</p>
+              <p class="nombreGastronomico">Alex Lezama, Dueño de Fray Restaurante</p>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, praesentium assumenda vitae delectus
-              porro officiis eum autem voluptatem non. Quasi, nihil. Quisquam similique natus dolor, sequi obcaecati
-              provident? Molestiae, itaque.</p>
           </div>
-        </div>
+          <div class="row justify-content-center align-items-center wow animate__animated animate__slideInLeft" id="invert">           
+            <div class="col-lg-8 col-sm-8">
+              <p>"Restaurant.pe nos ha ayudado a controlar mejor la administración del negocio. Con la plataforma, 
+                podemos revisar reportes de ventas, insumos, y financieros que nos dan ideas para mejorar. 
+                Además la herramienta de Menú Online, ha provocado que demos un mejor servicio a nuestros clientes, 
+                ya que no pagan sobrecostos por hacer pedidos a nosotros y es una interfaz amigable para que ellos hagan pedidos y 
+                hasta paguen con tarjeta o efectivo!"</p>
+                <p class="nombreGastronomico">Alex Lezama, Dueño de Fray Restaurante</p>
+            </div>
+            <div class="cuadro col-sm-4 col-lg-3 d-flex justify-content-end" id="inMediaClients">
+              <img src="img/clientes/fraylogo.svg" alt="cliente" class="bordesImgClients col-lg-10 col-sm-12">
+            </div>
+          </div>
+          
       </section>
     </section>
     <!--Marcas-->
 
-    <section class="altColorCentral container">
+    <section class="colorClientes">
       <div>
-        <h5>Marcas que confian en nosotros</h5>
+        <h5>Algunos de nuestros clientes</h5>
       </div>
-      <div class="container pb-5">
-        <div class="row justify-content-around pb-5 grupoMarcas">
-          <img src="img/marcas/1-red-square-restaurant.svg" alt="marca 1" class="col-md-2 col-5 marcas">
-          <img src="img/marcas/la-victoria-de-mexico.svg" alt="marca 2" class="col-md-2 col-5 marcas">
-          <img src="img/marcas/molino-restaurants.svg" alt="marca 3" class="col-md-2 col-5 marcas">
-          <img src="img/marcas/restaurante-girassol.svg" alt="marca 4" class="col-md-2 col-5 marcas">
-          <img src="img/marcas/tosaka-restaurante.svg" alt="marca 5" class="col-md-2 col-5 marcas">
+      <div class="pb-5">
+        <div class="row justify-content-around grupoMarcas">
+          <img src="img/clientes/marcas.jpeg" style="width: 100%;" alt="marcas">
         </div>
       </div>
     </section>
     <!--Contacto-->
 
-    <section id="contacto" class="contacto">
+    <section class="contacto" id="contactar">
       <div>
         <h4>Contactanos</h4>
       </div>
       <div class="container formulario">
-        <div class="row  justify-content-center ">
-          <div class="col-lg-3  col-md-5 col-sm-12 m-5 boxContacto ">
-            <h6>¡Gracias por su interés!</h6>
-            <img src="img/contacto/radix-icons_envelope-closed.svg" alt="imagen carta" class="carta mx-auto ">
-            <p>Escribenos aquí, asi te podemos asesorar sobre nuestro servicio de
-              software gratuito en punto de venta para gastronomia</p>
+          <div class="row col-12 justify-content-center ">
+            <div class="col-lg-3 col-sm-12 align-items-center">
+              <div class="sideContact">
+              <h6>¡Gracias por su interés!</h6>
+              <img src="img/contacto/radix-icons_envelope-closed.svg" alt="imagen carta" class="carta wow animate__animated animate__tada">
+              <p>Escribenos aquí, asi te podemos asesorar sobre nuestro servicio de 
+                software en punto de venta para gastronomia</p>
+            </div>
           </div>
-          <div class="col-6 col-md-7 col-sm-12">
-            <form action="">
-              <input type="text" class="form-control mb-4" required placeholder="Nombre">
-              <input type="tel" class="form-control mb-4" required placeholder="Telefono">
-              <input type="email" class="form-control mb-4" required placeholder="Correo electrónico">
-              <input type="tel" class="form-control mb-4" required placeholder="Nombre de su local">
-              <textarea name="Consulta" class="form-control" placeholder="Comentanos en que te podemos ayudar"
-                cols="auto" rows="auto"></textarea>
+          <div class="col-lg-6">
+            <form method="post" action="/php/formulario.php">
+               <input type="text" class="form-control mb-4 name" name="nombre" required placeholder="Nombre">
+              <input type="tel" class="form-control mb-4 telephone" name="telefono" required placeholder="Telefono">
+              <input type="email" class="form-control mb-4 mail" name="email" required placeholder="Correo electrónico">
+              <input type="text" class="form-control mb-4 local" name="local" placeholder="Nombre de su negocio">
+              <textarea name="mensaje" class="form-control" placeholder="Comentanos en que te podemos ayudar" cols="auto" rows="auto"></textarea>
               <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary btnEnviar">Enviar</button>
+                <button type="button" class="btn btnEnviar" id="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar</button>
+                <!-- Modal -->
+                <div class="modal fade"  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header justify-content-center">
+                        <h5 class="modal-title" id="staticBackdropLabel">Mensaje enviado!</h5>
+                      </div>
+                      <div class="modal-body">
+                       <p class="parrafoModal"></p> 
+                      </div>
+                      <div class="modal-footer justify-content-center">
+                        <button type="submit" class="btn btn-primary">Confirmar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </form>
           </div>
@@ -366,25 +390,24 @@
   <footer id="footer">
     <div class="container-fluid d-flex justify-content-center pt-5 px-5">
       <div class="row col-8">
-        <div class="grid1 col-lg-3 col-sm-6" id="noMarg">
+        <div class="grid1 col-lg-3 col-sm-12" id="noMarg">
           <div class="contenedorLogo">
-            <a href="index.html"><img src="img/logo/logo-blanco.svg" class="img-fluid"
-                alt="Logo restaurant.pe by Rowe"></a>
+            <a href="#portadaSelect"><img src="img/logo/logo-blanco.svg" class="img-fluid logoFooter" style="width: 65%;" alt="Logo restaurant.pe by Rowe"></a>
             <h6>Mexico</h6>
           </div>
         </div>
-        <div class="grid2 col-lg-5 col-sm-6">
+        <div class="grid2 col-lg-5 col-sm-12">
           <ul id="navFooter">
-            <a href="" class="footerNav">
+            <a href="#queHacemos" class="footerNav">
               <li>INICIO</li>
             </a>
-            <a href="" class="footerNav">
+            <a href="#funcionalidades" class="footerNav">
               <li>CARACTERISTICAS</li>
             </a>
-            <a href="" class="footerNav">
+            <a href="#clientes" class="footerNav">
               <li>CLIENTES</li>
             </a>
-            <a href="" class="footerNav">
+            <a href="#quienesSomos" class="footerNav">
               <li>NOSOTROS</li>
             </a>
           </ul>
@@ -395,8 +418,8 @@
               <p class="fs-5">Contacto</p>
             </div>
             <ul id="navFooter">
-              <li>Telefono +525554151049</li>
-              <li>Mail: restaurant.pe@rowe.mx</li>
+              <li>+528115072209</li>
+              <li>restaurant.pe@rowe.mx</li>
             </ul>
           </div>
           <div class="redes">
@@ -404,7 +427,7 @@
                 src="img/footer/facebook.svg" alt="Facebook"></a>
             <a href="https://www.instagram.com/rowe.mx/" target="_blank" rel="noopener noreferrer"><img
                 src="img/footer/instagram.svg" target="_blank" rel="noopener noreferrer" alt="Instagram"></a>
-            <a href="https://api.whatsapp.com/send?phone=+525554151049&text=Este es el telefono de restaurant.pe, Este es el telefono de restaurant.pe, escribenos o mandanos un mensaje de voz, estamos dispuestos a ayudarte."
+            <a href="https://api.whatsapp.com/send?phone=+528115072209&text=Este es el telefono de restaurant.pe, escribenos o mandanos un mensaje de voz, estamos dispuestos a ayudarte."
               target="_blank" rel="noopener noreferrer"><img src="img/footer/watsapp.svg" alt="Whatsapp"></a>
             <a href="https://www.rowe.mx/" target="_blank" rel="noopener noreferrer"><img src="img/footer/rowe_logo.svg"
                 alt="Logo Rowe"></a>
@@ -425,8 +448,10 @@
   </script>
   <!--JQuery-->
   <script src="js/jquery-3.6.0.min.js"></script>
-  <!--Javascript-->
+  <!--Javascript para portada-->
   <script src="js/main.js"></script>
+   <!--Javascript para validacion-->
+   <script src="js/form.js"></script>
 </body>
 
 </html>

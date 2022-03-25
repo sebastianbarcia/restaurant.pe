@@ -53,8 +53,6 @@
     }
 }
 
-
-
 #linkSpaces{
     font-family: $regular;
     color: black;
@@ -66,10 +64,9 @@
     }
 }
 
-
-/***********************************************/
+/************************************************/
 /**********************TITULOS*******************/
-/***********************************************/
+/************************************************/
 h4,h5{
     font-family: $medium;
     padding-top: 3rem;
@@ -181,7 +178,7 @@ main{
     padding-bottom: 3%;
     h4{
         text-align: center; 
-        padding-top: 5rem;       
+        padding-top: 3rem;       
     }
     p{
         text-align: justify;
@@ -195,7 +192,6 @@ main{
     background-color: $naranjaPrincipal;
     
 .funcbox {
- 
   padding-bottom: 5%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -203,8 +199,8 @@ main{
     }
     h4 {
         text-align: center;
-        padding-top: 5rem;
-        padding-bottom: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         font-size: 1.5rem;
         color: white;
       }
@@ -224,65 +220,72 @@ main{
                     margin-top: 2rem;
                     text-align: center;
                     font-family: $regular;
-                  }
-      }
-}
- 
-
-
-
-/*SECCION FUNCIONALIDADES*/
-
-.ventajas {
-    h4 {
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-size: 1.5rem;
-    }
-    .cardFunc{
-        background-color: #ffffff;
-        border-radius: 20px;    
-        border: 2px solid $naranjaPrincipal;
-        height: 310px;
-        img {
-            margin: 1rem auto;
-            border-radius: 15px;    
-         }
-         .textoVentajas {
-            .posicionTexto{
-                text-align: right;
-                margin-right: 0rem;
+                }
             }
-          text-align: justify;
-          ul{
-              padding-left: 0%;
-              text-align: left;
-              margin-right: 2rem;
-              li{
-                  font-family: $regular;
-                  list-style-type: none;
-              }
-              img{
-                  padding-right: 5%;
-                  margin: 0% 0%;
-              }
-              .checkList{
-                  padding-right: 0%;
-                  padding-left: 5%;
-              }     
-          }
         }
-        h5 {
-            color: $naranjaPrincipal;
-            text-align: left;
-            margin-right: 2rem;
-            padding-top: 0rem;
-            padding-bottom: 0.2rem;
-          }
-    }
-}
+ 
+/***************************************************/
+/****************funcionalidades*******************/
+/**************************************************/
 
+.ventajas h4 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .ventajas .cardFunc img {
+     margin: 1rem auto;
+     border-radius: 15px;    
+  }
+  .cardFunc{
+      background-color: #ffffff;
+      border-radius: 20px;    
+      border: 2px solid $naranjaPrincipal;
+      height: auto;
+  }
+  .imgCardFunc{
+      padding-left: 3rem;
+  }
+  .ventajas .row .textoVentajas {
+      .posicionTexto{
+          text-align: right;
+          margin-right: 0rem;
+      }
+    text-align: justify;
+    ul{
+        padding-left: 0%;
+        li{
+            font-family: $regular;
+        }
+        img{
+            padding-right: 5%;
+            margin: 0% 0%;
+        }
+        .checkList{
+            padding-right: 0%;
+            padding-left: 5%;
+        }     
+    }
+  }
+  
+  .ventajas .row .textoVentajas h5 {
+    color: $naranjaPrincipal;
+    text-align: left;
+    margin-right: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 0.2rem;
+  }
+  
+  .ventajas .row .textoVentajas ul {
+    text-align: left;
+    margin-right: 2rem;
+  }
+  
+  .ventajas .row .textoVentajas ul li {
+    list-style-type: none;
+  }
 /************************************/
 /***********Utilidades***************/
 /************************************/
@@ -292,7 +295,8 @@ main{
       padding: 0% 3%;
       h4 {
         text-align: center;
-        padding-top: 4rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         font-size: 1.5rem;
       }
       P{
@@ -305,149 +309,171 @@ main{
         border: 2px solid $naranjaPrincipal;
         border-radius: 10%;
       }
-  }
-  
-  
+    }
 }
-
-
-
-/* SECCION QUIENES SOMOS*/
+/************************************/
+/***********quienes somos************/
+/************************************/
 #quienesSomos {
     background-color: $naranjaPrincipal;
-    
+    padding-bottom: 3rem;
     h4 {
         text-align: center;
-        padding-top: 5rem;
-        padding-bottom: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         font-size: 1.5rem;
         color: white;
       }
     .descripcionQS{
         margin: 0rem 1rem;
         p{
-            text-align: justify;
-            font-size: 1.2em;
+            font-size: 1.1em;
             padding-right: 1rem;
             color: white;
-            line-height: 1.5rem;
+            line-height: 2rem;
             margin-right: 3rem;
             font-family: $regular;
             
         }
         .logoSoftwares {
             width: 175px;
-            max-height: 75px;
+            max-height: 70px;            
             background-color: white;
-            margin: 2rem;
+            margin: 2rem 0rem;
             padding: 1.5rem;
             border-radius: 15px;
         }
-    }   
-    
+        .logoSoftwares:hover{
+           background-color:rgba(255, 255, 255, 0.850);
+        }
+        .softwares{
+            p{
+                font-family: $medium;
+                text-align: left;
+            }
+        }
+    }     
 }
   
-
 /***********************************/
 /************Clientes***************/
 /***********************************/
+
 .colorClientes{
     background-color: white;
     #noPad{
         padding-bottom: 0%;
         margin-bottom: 0;
-        padding-top: 4rem;
+        padding: 3rem 0rem
     }
-}
-.video {
-    margin-top: 2rem;
-   
 }
 .testimonios{  
     background-color: white;
-    padding-top: 5%;
-    padding-bottom: 5%;
-   
+    padding-top: 5rem;
+    padding-bottom: 5rem;   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-     
+    justify-content: space-evenly;     
     div{           
         p{
+        padding-top: 0.5rem;
         text-align: left;
-        padding-top: 12%;
         font-family: $regular;
+        margin-bottom: 0%;
         }
         .bordesImgClients{
             border-radius: 5%;
-            width: 390%;
             border:2px solid $naranjaPrincipal;           
         }
+        .nombreGastronomico{
+            font-family: $medium;
+        }
+    }
+    #invert{
+        padding-top: 5rem;
     }    
 }
 /**************************************/
 /****************Marcas****************/
 /**************************************/
 .grupoMarcas{        
-    .marcas{
-        border-radius: 5%;    
-        border:2px solid $naranjaPrincipal;    
-        padding-right: 0%;
-        padding-left: 0%;
+    
         h5{
             padding-top: 0rem;
         }
     }
-}
+
 /***************************************/
 /*************Contacto******************/
 /***************************************/
 .contacto{
     color: white;
-    background-color: $naranjaPrincipal;
-    h4{
-        padding-top: 5rem;
+    background-color: $naranjaPrincipal;   
+}
+.formulario{   
+    h6{
+        color: white;
+        font-size: 110%;
+        font-family: $medium;
+        text-align: center;
+      
+        margin-bottom: 1rem;
     }
-    .formulario{   
-        h6{
-            color: white;
-            font-size: 110%;
-            font-family: $medium;
-            text-align: center;
-            
-            margin-bottom: 1rem;
+    p{
+        color: white;
+        font-family: $light;
+        line-height: 2.1rem;
+        margin-top: 1rem;
+        text-align: center;
+        padding: 0rem 2rem;
+    } 
+     .sideContact{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     .carta{
+         width: 50%;
+     }
+    .row{
+        padding: 0rem 1rem;
+        --bs-gutter-x: 0rem; 
+    }
+        
+    input{
+        border: $naranjaPrincipal;            
+    }
+    textarea{
+        border: $naranjaPrincipal;
+        height: 10rem;
+        }
+    .btnEnviar{
+        @extend.BtnContactoNav;
+        background-color: white;
+        margin: 2em 0rem;   
+        }
+    button:hover{
+        background-color: $footerBackGround;
+        color: white;
+    }
+    .modal{
+        h5{
+            color: $naranjaPrincipal;
+            padding: 1rem 0rem;
         }
         p{
-            color: white;
-            font-family: $light;
-            line-height: 2.1rem;
-            margin-top: 1rem;
-            
-            text-align: center;
-        }  
-        .carta{
-            padding-left: 4rem;
+            color: black;
         }
-        .row{
-            padding: 0rem 1rem;
-            --bs-gutter-x: 0rem; 
-        }
-            
-        input{
-            border: $naranjaPrincipal;            
-        }
-        textarea{
-            border: $naranjaPrincipal;
-            height: 10rem;
-            }
         button{
-            
-            
-            margin: 2em 0rem;
-              
-            }
+            background-color: $naranjaPrincipal;
+            border-color: $naranjaPrincipal;
         }
+        button:hover{
+            background-color: $naranjaSecundario;
+            border-color: $naranjaSecundario;
+        }
+    }
 }
 
 /*************************************/     
@@ -492,7 +518,6 @@ footer{
         }     
     }   
 }
-
 .grid3{
     p{
     color: white;
@@ -523,7 +548,6 @@ footer{
     color: white;
     font-family:´rubik-regular´;
 }
-
 /*****************************************/
 /**************Mediaqueries***************/
 /*****************************************/
@@ -532,6 +556,9 @@ footer{
     /***********header************/
     .botonMediaScreen{
         display: none;
+    }
+    .tamano{
+        margin-top: 1rem;
     }
     /******carril central********/
     .colorColumnCentral{
@@ -550,40 +577,25 @@ footer{
         display: flex;
         align-items: center;     
     } 
+    .grid2{
+        padding-left: 0%;
+        align-items: flex-start;
+    }
+    .grid3{
+        padding-left: 0%;
+    }
+    .logoFooter{
+        width: 100%;
+    }
     /*******funcionalidades*********/
-    .boxFuncionalidad{
-        .cardFunc{
-            height: auto;
-            text-align: center;
-            .imgFuncionalidad{
-                width: 35%;
-            }
-            .textoVentajas{
-                h5{
-                    text-align: center;
-                }
-                ul{
-                    
-                    li{
-                        justify-content: center;
-                        text-align: justify;
-                        img{
-                            text-align: center;
-                        }
-                    }
-                }
-                
-            }
-        }
-
+    .cardFunc{
+        height: auto;
     }    
     #displayInverse{
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
         .posicionTexto{
-            text-align: center !important;
-            align-self: center;
+            text-align: left;
             .checkList{
                 padding-left: 0%;
                 padding-right: 5%;
@@ -592,14 +604,15 @@ footer{
          .textoVentajas li{
             display: flex;
             flex-direction: row-reverse;
-            justify-content: center !important;
         }
     }
+    /******quienes somos*****/
     #quienesSomos{
         .boxImgRowe {
             text-align: center;
             .imgRowe {
-                width: 50%;
+                padding: 3rem 0rem;
+                width: 20%;
                 justify-content: center;
             }
         }
@@ -614,6 +627,9 @@ footer{
     .boxContacto {
         margin: 0 !important;
     }
+    .carta{
+        width: 15% !important; 
+    }
     #footer {
         .contenedorLogo{
             a{
@@ -623,9 +639,30 @@ footer{
             }
         }
     }
+    /***clientes****/
+    .testimonios{
+        padding-top: 3rem;
+        padding-bottom: 3rem;   
+        #invert{
+            padding-top: 3rem;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 768px){
+ /*********portada************/
+.portadaIndex{
+    h1{
+        padding-left: 9.5%;
+    }
+    p{
+        padding-left: 9.5%;
+    }
+    div{
+        padding-left: 9.5%;
+    }
+}
     .testimonios{
         div{
             width: 100%;
@@ -644,6 +681,14 @@ footer{
             }
         }        
     }
+    #invert{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #inMediaClients{
+        display: flex;
+        justify-content: center !important;
+    }
     .marcas{
         margin-bottom: 5%;
     }
@@ -661,6 +706,23 @@ footer{
     }
 }
 @media only screen and (max-width: 576px){
+    .portadaIndex{
+        h1{
+            padding-left: 8%;
+            font-size: 180%;
+        }
+        p{
+            font-size: 80%;
+            padding-left: 8%;
+        }
+        div{
+            padding-left: 8%;
+            button{
+                font-size: 80%;
+            }
+            
+        }
+    }
     .logoMediaScreen{
         margin-bottom: 5%;
     }
@@ -668,27 +730,35 @@ footer{
      .colorColumnCentral{
         width: auto;
     }
+    /*****funcionalidades*****/
     .cardFunc{
         width: 90%;
     } 
     /* quienes somos*/
     #quienesSomos {
+       
         .softwares{
             a{
                 margin: -0.5rem
             }
         }
-        .boxImgRowe{
-            margin-top: 1rem;
-        }
     }
-
-
+    #imgRoweMovil{       
+        width: 50% !important;
+    }
+   
     /*footer*/
     #footer{
-        text-align: center;
+        text-align: left;
         .grid1{
-            justify-content: center;
+            justify-content: left;
+        }
+        .grid2{
+            align-items: flex-start;
+            padding-left: 0%;
+        }
+        .grid3{
+            padding-left: 0%;
         }
     }
 }
