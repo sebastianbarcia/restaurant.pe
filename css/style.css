@@ -209,13 +209,13 @@ main {
   border-radius: 15px; }
 
 .cardFunc {
-  background-color: #ffffff;
+  background-color: #fd7e14;
   border-radius: 20px;
   border: 2px solid #fd7e14;
-  height: auto; }
-
-.imgCardFunc {
-  padding-left: 3rem; }
+  height: auto;
+  padding: 1rem 0rem;
+  -webkit-box-shadow: 0px 0px 15px 5px #FFA048;
+  box-shadow: 0px 0px 15px 5px #FFA048; }
 
 .ventajas .row .textoVentajas {
   text-align: justify; }
@@ -234,13 +234,14 @@ main {
       padding-left: 5%; }
 
 .ventajas .row .textoVentajas h5 {
-  color: #fd7e14;
+  color: white;
   text-align: left;
   margin-right: 2rem;
   padding-top: 0rem;
   padding-bottom: 0.2rem; }
 
 .ventajas .row .textoVentajas ul {
+  color: white;
   text-align: left;
   margin-right: 2rem; }
 
@@ -337,6 +338,9 @@ main {
 /**************************************/
 .grupoMarcas h5 {
   padding-top: 0rem; }
+
+.colorClientes .row {
+  --bs-gutter-x: 0rem; }
 
 /***************************************/
 /*************Contacto******************/
