@@ -1,5 +1,11 @@
 @import "variables";
-
+@mixin espaciadoTitulo {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-family: $medium;
+    font-size: 1.5rem;
+}
 /***********************************************/
 *{
     margin:0;
@@ -57,22 +63,13 @@
     font-family: $regular;
     color: black;
     font-size: 90%;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
     &:hover{
         color: $naranjaPrincipal;
     }
 }
 
-/************************************************/
-/**********************TITULOS*******************/
-/************************************************/
-h4,h5{
-    font-family: $medium;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    text-align: center;
-}
 
 /***********************************************/
 /****************ASIDE WATSAPP******************/
@@ -101,9 +98,10 @@ h4,h5{
 /***********************************************/  
        
 .portadaIndex{
-    background-image: url(../img/portada/fotoPortada.svg); 
+    background-image: url(../img/portada/imgfondo2.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
+    
     background-position: center center;
     height: 690px;
     display: flex;
@@ -177,8 +175,7 @@ main{
 #queHacemos {  
     padding-bottom: 3%;
     h4{
-        text-align: center; 
-        padding-top: 3rem;       
+        @include espaciadoTitulo();       
     }
     p{
         text-align: justify;
@@ -198,10 +195,9 @@ main{
           justify-content: center;
     }
     h4 {
-        text-align: center;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        font-size: 1.5rem;
+        
+        @include espaciadoTitulo();
+        
         color: white;
       }
       .card {
@@ -229,10 +225,8 @@ main{
 /**************************************************/
 
 .ventajas h4 {
-    text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-size: 1.5rem;
+    @include espaciadoTitulo();
+    
   }
   
   .ventajas .cardFunc img {
@@ -251,9 +245,13 @@ main{
   }
  
   .ventajas .row .textoVentajas {
-      .posicionTexto{
+     h5{
+        font-weight: bold;
+     } 
+    .posicionTexto{
           text-align: right;
           margin-right: 0rem;
+          
       }
     text-align: justify;
     ul{
@@ -294,13 +292,14 @@ main{
 /************************************/
 .utilidades {
   text-align: center;
+  h4{
+    @include espaciadoTitulo()
+  }
   .boxUtilidades{
       padding: 0% 3%;
       h4 {
-        text-align: center;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        font-size: 1.5rem;
+        @include espaciadoTitulo();
+        
       }
       P{
         font-family: $regular;
@@ -321,10 +320,8 @@ main{
     background-color: $naranjaPrincipal;
     padding-bottom: 3rem;
     h4 {
-        text-align: center;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        font-size: 1.5rem;
+        @include espaciadoTitulo();
+       
         color: white;
       }
     .descripcionQS{
@@ -336,25 +333,23 @@ main{
             line-height: 2rem;
             margin-right: 3rem;
             font-family: $regular;
+            text-align: justify;
+            
             
         }
-        .logoSoftwares {
-            width: 175px;
-            max-height: 70px;            
-            background-color: white;
-            margin: 2rem 0rem;
-            padding: 1.5rem;
-            border-radius: 15px;
-        }
-        .logoSoftwares:hover{
-           background-color:rgba(255, 255, 255, 0.850);
-        }
-        .softwares{
-            p{
-                font-family: $medium;
-                text-align: left;
+        ul {
+            li {
+                font-size: 1.1em;
+                padding-right: 1rem;
+                color: white;
+                line-height: 2rem;
+                margin-right: 3rem;
+                font-family: $regular;
+                text-align: justify;
             }
         }
+        
+        
     }     
 }
   
@@ -365,9 +360,9 @@ main{
 .colorClientes{
     background-color: white;
     #noPad{
-        padding-bottom: 0%;
+        @include espaciadoTitulo();
         margin-bottom: 0;
-        padding: 3rem 0rem
+        
     }
 }
 .testimonios{  
@@ -381,7 +376,7 @@ main{
     div{           
         p{
         padding-top: 0.5rem;
-        text-align: left;
+        text-align: justify;
         font-family: $regular;
         margin-bottom: 0%;
         }
@@ -406,18 +401,32 @@ main{
         }
     }
 .colorClientes{
+    h5{
+        @include espaciadoTitulo();
+        padding-top: 2rem;
+    }
     .row{
         --bs-gutter-x: 0rem;
+       
+        
 
     }
+    
 }
-
+.video{
+    video{
+        width: 90%;
+    }
+}
 /***************************************/
 /*************Contacto******************/
 /***************************************/
 .contacto{
     color: white;
-    background-color: $naranjaPrincipal;   
+    background-color: $naranjaPrincipal;
+    h4{
+        @include espaciadoTitulo()
+    }   
 }
 .formulario{   
     h6{
@@ -460,6 +469,7 @@ main{
         @extend.BtnContactoNav;
         background-color: white;
         margin: 2em 0rem;   
+        
         }
     button:hover{
         background-color: $footerBackGround;
@@ -493,7 +503,10 @@ footer{
     padding-bottom: 2%;
     .grid1{
         .contenedorLogo{                        
-            margin-bottom: 5%;  
+            margin-bottom: 5%;
+             .logoFooter{
+                 width: 200px;
+             }
         }        
         h6{
             padding-top: 5%;
@@ -562,6 +575,9 @@ footer{
 
 @media only screen and (max-width: 992px) {
     /***********header************/
+    .btnMenu {
+        width: 100px;
+    }
     .botonMediaScreen{
         display: none;
     }
@@ -581,29 +597,65 @@ footer{
         font-family: $regular;       
        } 
     /********footer*****************/    
-    .grid1{
-        display: flex;
-        align-items: center;     
-    } 
-    .grid2{
-        padding-left: 0%;
-        align-items: flex-start;
+    #footer{
+        .row{
+            justify-content: center;
+            .grid1{
+                display: flex;
+                align-items: center;
+                justify-content: center;     
+            } 
+            .grid2{
+                padding-left: 0%;
+                align-items: center;
+                justify-content: center; 
+                text-align: center; 
+            }
+            .grid3{
+                padding-left: 0%;
+                justify-content: center; 
+                align-items: center; 
+                text-align: center; 
+            }
+        }
+       
     }
-    .grid3{
-        padding-left: 0%;
+    
+    /*caracteristicas*/ 
+    #funcionalidades {
+        .funcbox {
+            .card {
+                margin: 2rem 2rem;
+            }
+        }
     }
-    .logoFooter{
-        width: 100%;
-    }
+    
     /*******funcionalidades*********/
     .cardFunc{
         height: auto;
     }    
+    .ventajas {
+        .textoVentajas{
+            h5{
+                text-align: center !important;
+                
+            }
+            ul{
+                text-align: center;
+                li{
+                    justify-content: center;
+                    
+                }
+            }
+        }
+    }
     #displayInverse{
         display: flex;
         flex-direction: column-reverse;
         .posicionTexto{
-            text-align: left;
+            li{
+                justify-content: center  !important;
+            }
             .checkList{
                 padding-left: 0%;
                 padding-right: 5%;
