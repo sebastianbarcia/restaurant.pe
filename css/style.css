@@ -217,8 +217,7 @@ main {
   border: 2px solid #fd7e14;
   height: auto;
   padding: 1rem 0rem;
-  -webkit-box-shadow: 0px 0px 15px 5px #FFA048;
-  box-shadow: 0px 0px 15px 5px #FFA048; }
+  box-shadow: 0px 0px 13px 1px #FFA048; }
 
 .ventajas .row .textoVentajas {
   text-align: justify; }
@@ -528,22 +527,14 @@ footer {
     padding-bottom: 2%;
     font-family: ´rubik-regular´; }
   /********footer*****************/
-  #footer .row {
-    justify-content: center; }
-    #footer .row .grid1 {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    #footer .row .grid2 {
-      padding-left: 0%;
-      align-items: center;
-      justify-content: center;
-      text-align: center; }
-    #footer .row .grid3 {
-      padding-left: 0%;
-      justify-content: center;
-      align-items: center;
-      text-align: center; }
+  .grid1 {
+    display: flex;
+    align-items: center; }
+  .grid2 {
+    padding-left: 0%;
+    align-items: flex-start; }
+  .grid3 {
+    padding-left: 0%; }
   /*caracteristicas*/
   #funcionalidades .funcbox .card {
     margin: 2rem 2rem; }
@@ -576,8 +567,10 @@ footer {
     margin: 0 !important; }
   .carta {
     width: 15% !important; }
+  #footer .positionFooter {
+    padding-left: 1.75rem !important; }
   #footer .contenedorLogo a img {
-    width: 150px; }
+    width: 64%; }
   /***clientes****/
   .testimonios {
     padding-top: 3rem;
@@ -585,7 +578,11 @@ footer {
     .testimonios #invert {
       padding-top: 3rem; }
   .video video {
-    width: 100%; } }
+    width: 100%; }
+  /******contacto**********/
+  .btnEnviar {
+    padding-right: 4.75rem;
+    padding-left: 4.75rem; } }
 
 @media only screen and (max-width: 768px) {
   /*********portada************/
@@ -631,36 +628,61 @@ footer {
 @media only screen and (max-width: 576px) {
   main {
     background-color: white; }
+  #queHacemos {
+    padding-right: 0%;
+    padding-left: 0%; }
   .px-5 {
     padding-right: 1rem !important;
     padding-left: 1rem !important; }
   .portadaIndex h1 {
-    padding-left: 8%;
+    padding-left: 5%;
     font-size: 180%; }
   .portadaIndex p {
     font-size: 80%;
-    padding-left: 8%; }
+    padding-left: 5%; }
   .portadaIndex div {
-    padding-left: 8%; }
+    padding-left: 5%; }
     .portadaIndex div button {
       font-size: 80%; }
   .logoMediaScreen {
     margin-bottom: 5%; }
+  /******utilidades*********/
+  .colorUtilidadesMedia {
+    background-color: #F8F8F8; }
+  /******contacto***********/
   /*****funcionalidades*****/
+  .cardsFuncionalidades {
+    padding-right: 0%;
+    padding-left: 0%; }
   .cardFunc {
     width: 100%; }
   /* quienes somos*/
+  #quienesSomos .descripcionQS p {
+    padding-right: 0%; }
+  #quienesSomos .descripcionQS ul li {
+    padding-right: 0%;
+    margin-right: 0%; }
+  #quienesSomos div {
+    padding-right: 0%;
+    padding-left: 0%; }
   #quienesSomos .softwares a {
     margin: -0.5rem; }
   #imgRoweMovil {
     width: 50% !important; }
+  /*clientes*/
+  #clientes {
+    padding: 0% 0%; }
   /*footer*/
   #footer {
     text-align: left; }
+    #footer .positionFooter {
+      padding-left: 0.75rem !important; }
     #footer .grid1 {
       justify-content: left; }
     #footer .grid2 {
       align-items: flex-start;
       padding-left: 0%; }
     #footer .grid3 {
-      padding-left: 0%; } }
+      padding-left: 0%; }
+  .licencia p {
+    font-size: 80%; } }
