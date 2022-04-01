@@ -515,7 +515,8 @@ footer {
     margin-top: 1rem; }
   #mediaHeader {
     display: flex !important;
-    justify-content: space-between !important; }
+    justify-content: space-between !important;
+    padding-right: 0%; }
   .sinMargen {
     padding-left: 0%; }
   /******carril central********/
@@ -634,6 +635,8 @@ footer {
       padding-left: 0 !important; } }
 
 @media only screen and (max-width: 576px) {
+  main {
+    background-color: white; }
   .px-5 {
     padding-right: 1rem !important;
     padding-left: 1rem !important; }

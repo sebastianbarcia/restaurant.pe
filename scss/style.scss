@@ -599,6 +599,7 @@ footer{
     #mediaHeader{
         display:flex !important;
         justify-content: space-between !important;
+        padding-right: 0%;
     }
     .sinMargen{
         padding-left: 0%;
@@ -795,6 +796,9 @@ footer{
     }
 }
 @media only screen and (max-width: 576px){
+    main{
+        background-color: white;
+    }
     .px-5{
         padding-right: 1rem !important;
         padding-left: 1rem !important;
