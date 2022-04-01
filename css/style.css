@@ -550,20 +550,14 @@ footer {
   /*******funcionalidades*********/
   .cardFunc {
     height: auto; }
-  .ventajas .textoVentajas h5 {
-    text-align: center !important; }
-  .ventajas .textoVentajas ul {
-    text-align: center; }
-    .ventajas .textoVentajas ul li {
-      justify-content: center; }
   #displayInverse {
     display: flex;
     flex-direction: column-reverse; }
-    #displayInverse .posicionTexto li {
-      justify-content: center  !important; }
-    #displayInverse .posicionTexto .checkList {
-      padding-left: 0%;
-      padding-right: 5%; }
+    #displayInverse .posicionTexto {
+      text-align: unset; }
+      #displayInverse .posicionTexto .checkList {
+        padding-left: 0%;
+        padding-right: 5%; }
     #displayInverse .textoVentajas li {
       display: flex;
       flex-direction: row-reverse; }
@@ -654,7 +648,7 @@ footer {
     margin-bottom: 5%; }
   /*****funcionalidades*****/
   .cardFunc {
-    width: 90%; }
+    width: 100%; }
   /* quienes somos*/
   #quienesSomos .softwares a {
     margin: -0.5rem; }

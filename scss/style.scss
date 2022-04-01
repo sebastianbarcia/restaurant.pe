@@ -652,28 +652,12 @@ footer{
     .cardFunc{
         height: auto;
     }    
-    .ventajas {
-        .textoVentajas{
-            h5{
-                text-align: center !important;
-                
-            }
-            ul{
-                text-align: center;
-                li{
-                    justify-content: center;
-                    
-                }
-            }
-        }
-    }
+    
     #displayInverse{
         display: flex;
         flex-direction: column-reverse;
         .posicionTexto{
-            li{
-                justify-content: center  !important;
-            }
+            text-align: unset;
             .checkList{
                 padding-left: 0%;
                 padding-right: 5%;
@@ -825,7 +809,7 @@ footer{
     }
     /*****funcionalidades*****/
     .cardFunc{
-        width: 90%;
+        width: 100%;
     } 
     /* quienes somos*/
     #quienesSomos {
