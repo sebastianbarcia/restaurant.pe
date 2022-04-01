@@ -418,12 +418,8 @@ main{
         padding-top: 2rem;
     }
     .row{
-        --bs-gutter-x: 0rem;
-       
-        
-
+        --bs-gutter-x: 0rem;      
     }
-    
 }
 
 /***************************************/
@@ -561,7 +557,7 @@ footer{
     padding-top: 1%;
     }
     img{
-        width: 10%;
+        width: 14%;
         margin-right: 3%;
         margin-top: 1%;
         border-radius: 15%; 
@@ -624,6 +620,9 @@ footer{
     }
     .grid3{
         padding-left: 0%;
+        img{
+            width: 6%;
+        }
     }
     
     
@@ -772,6 +771,11 @@ footer{
         text-align: center;
         img{
             padding-left: 0 !important;
+        }
+    }
+    .grid3{
+        img{
+            width: 10%;
         }
     }
 }
