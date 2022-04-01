@@ -400,6 +400,11 @@ main{
         padding-top: 5rem;
     }    
 }
+.video{
+    video{
+        width: 90%;
+    }
+}
 /**************************************/
 /****************Marcas****************/
 /**************************************/
@@ -421,11 +426,7 @@ main{
     }
     
 }
-.video{
-    video{
-        width: 90%;
-    }
-}
+
 /***************************************/
 /*************Contacto******************/
 /***************************************/
@@ -609,9 +610,7 @@ footer{
     /********Quienes somos***********/
     .margenParrafoVideo {
         padding-top: 2%;
-        padding-bottom: 2%;
-        padding-right: 1%;
-        padding-left: 1%; 
+        padding-bottom: 2%; 
         font-family: $regular;       
        } 
     /********footer*****************/    
@@ -725,6 +724,12 @@ footer{
             padding-top: 3rem;
         }
     }
+    .video{
+        video{
+            width: 100%;
+        }
+        
+    }
 
 }
 
@@ -750,14 +755,20 @@ footer{
                 justify-content: center;
             }
             .bordesImgClients{
-                width: 70%;               
+                width: 40%;               
             }
             p{
                 padding-top: 5%;
-                padding-right: 5%;
-                padding-left: 5%;
             }
         }        
+    }
+    .marginDivision{
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .parrafoVideo {
+        padding-right: 0%;
+        padding-left: 0%;
     }
     #invert{
         display: flex;
@@ -807,10 +818,6 @@ footer{
     }
     .logoMediaScreen{
         margin-bottom: 5%;
-    }
-     /******carril central********/
-     .colorColumnCentral{
-        width: auto;
     }
     /*****funcionalidades*****/
     .cardFunc{
