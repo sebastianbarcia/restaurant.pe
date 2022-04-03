@@ -16,10 +16,12 @@ let correo = mail.value;
 /*Los eventos chequean si los inputs estan completos*/
 names.onchange = () => {
     blockButton();
-    cargarName()
+    cargarName();
+    validarEmail(mail);
 }
 telephone.onchange = () => {
     blockButton();
+    validarEmail(mail);
 }
 mail.onchange = () => {
     blockButton();
@@ -27,6 +29,7 @@ mail.onchange = () => {
 }
 local.onchange = () => {
     blockButton();
+    validarEmail(mail);
 }
 
 /*funcion para deseleccionar boton*/
@@ -50,7 +53,6 @@ function validarEmail(mail) {
     if (/\S+@\S+/.test(mail.value)){
         console.log("mail correcto");
     } else {
-     alert("Algo no ha ido bien, introduzca su email correctamente");
      document.getElementById('button').disabled = true;
     }
   }
