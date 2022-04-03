@@ -15,7 +15,7 @@ $mensaje .= "Su e-mail es: " . $mail . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'sebastianbarcia@hotmail.com';
+$para = 'hola@rowe.mx';
 $asunto = 'Mensaje del sitio restaurant.rowe.mx';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
